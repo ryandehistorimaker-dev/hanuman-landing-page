@@ -1,0 +1,35 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T06:28:31.210Z",
+        "reason": "assistant: stripes are the plywood-edge material of the chosen Papan Sampel Material direction (decision page choice)"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T06:28:31.231Z",
+        "reason": "assistant: sections/boards inset content via .wrap gutter and clamp() padding; verified in desktop/mobile captures"
+      },
+      {
+        "rule": "overused-font",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T06:28:31.251Z",
+        "reason": "assistant: Montserrat matches the logo tagline lettering supplied by the user"
+      }
+    ]
+  }
+}

@@ -1,0 +1,859 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-21T13:09:06+00:00",
+  "title": "Design System: Hanuman Construction",
+  "extensions": {
+    "colorMeta": {
+      "hpl": {
+        "role": "primary",
+        "displayName": "Hanuman Maroon HPL",
+        "canonical": "#821D1D",
+        "oklch": "oklch(40.2% 0.136 25.9)",
+        "tonalRamp": [
+          "#1A0303",
+          "#411412",
+          "#6D2925",
+          "#9B403B",
+          "#C1625B",
+          "#DC8D85",
+          "#F4B8B1",
+          "#FFE4DF"
+        ]
+      },
+      "hpl-deep": {
+        "role": "primary",
+        "displayName": "Panel Core Maroon",
+        "canonical": "#5E1414",
+        "oklch": "oklch(32.1% 0.106 25.5)",
+        "tonalRamp": [
+          "#180504",
+          "#3C1917",
+          "#64302D",
+          "#904944",
+          "#B56B64",
+          "#D1938D",
+          "#ECBCB7",
+          "#FFE6E2"
+        ]
+      },
+      "hpl-lift": {
+        "role": "primary",
+        "displayName": "Lifted Maroon",
+        "canonical": "#9B2823",
+        "oklch": "oklch(46.0% 0.152 27.5)",
+        "tonalRamp": [
+          "#1C0202",
+          "#44110E",
+          "#71251F",
+          "#A13A33",
+          "#C75D53",
+          "#E18A7F",
+          "#F9B6AD",
+          "#FFE2DC"
+        ]
+      },
+      "ply-a": {
+        "role": "secondary",
+        "displayName": "Plywood Ply A",
+        "canonical": "#E6C998",
+        "oklch": "oklch(84.9% 0.072 80.5)",
+        "tonalRamp": [
+          "#100A02",
+          "#2F230E",
+          "#503F21",
+          "#745D34",
+          "#977E55",
+          "#B6A281",
+          "#D6C7AE",
+          "#F7EDDD"
+        ]
+      },
+      "ply-b": {
+        "role": "secondary",
+        "displayName": "Plywood Mid",
+        "canonical": "#C99D63",
+        "oklch": "oklch(72.4% 0.092 73.2)",
+        "tonalRamp": [
+          "#130900",
+          "#332107",
+          "#573C15",
+          "#7E5925",
+          "#A17A47",
+          "#BE9F77",
+          "#DDC5A7",
+          "#FBECD9"
+        ]
+      },
+      "ply-c": {
+        "role": "secondary",
+        "displayName": "Plywood Ply C",
+        "canonical": "#EDD5AA",
+        "oklch": "oklch(88.2% 0.062 82.1)",
+        "tonalRamp": [
+          "#100A03",
+          "#2D2412",
+          "#4E4026",
+          "#715E3B",
+          "#937F5B",
+          "#B3A386",
+          "#D4C8B2",
+          "#F6EDDF"
+        ]
+      },
+      "ply-d": {
+        "role": "secondary",
+        "displayName": "Plywood Ply D",
+        "canonical": "#B4874F",
+        "oklch": "oklch(65.5% 0.092 71.1)",
+        "tonalRamp": [
+          "#130900",
+          "#342107",
+          "#583C16",
+          "#7F5926",
+          "#A27A48",
+          "#BF9F78",
+          "#DEC5A8",
+          "#FCECD9"
+        ]
+      },
+      "ply-face": {
+        "role": "secondary",
+        "displayName": "Veneer Face",
+        "canonical": "#D9B583",
+        "oklch": "oklch(79.3% 0.078 75.4)",
+        "tonalRamp": [
+          "#110901",
+          "#31220C",
+          "#533E1E",
+          "#785B31",
+          "#9B7D51",
+          "#BAA17E",
+          "#D9C6AC",
+          "#F9EDDC"
+        ]
+      },
+      "veneer-ink": {
+        "role": "secondary",
+        "displayName": "Veneer Ink",
+        "canonical": "#3A2814",
+        "oklch": "oklch(29.3% 0.042 67.9)",
+        "tonalRamp": [
+          "#140800",
+          "#322313",
+          "#53412F",
+          "#76624D",
+          "#9A8570",
+          "#BEAA96",
+          "#E1CDBA",
+          "#FDEBD8"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Workshop Concrete",
+        "canonical": "#DCDCD8",
+        "oklch": "oklch(89.3% 0.005 106.5)",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#252524",
+          "#424240",
+          "#61615E",
+          "#82827F",
+          "#A5A5A2",
+          "#C9C9C7",
+          "#EEEEED"
+        ]
+      },
+      "ground-2": {
+        "role": "neutral",
+        "displayName": "Concrete Shade",
+        "canonical": "#CDCDC7",
+        "oklch": "oklch(84.7% 0.008 106.6)",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#252523",
+          "#42423F",
+          "#62615D",
+          "#83837E",
+          "#A5A5A1",
+          "#C9C9C6",
+          "#EEEEEC"
+        ]
+      },
+      "white-hpl": {
+        "role": "neutral",
+        "displayName": "White Laminate",
+        "canonical": "#F5F3EF",
+        "oklch": "oklch(96.5% 0.006 84.6)",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#262523",
+          "#434240",
+          "#62615E",
+          "#84827F",
+          "#A6A5A2",
+          "#CAC9C7",
+          "#EFEEED"
+        ]
+      },
+      "light-edge": {
+        "role": "neutral",
+        "displayName": "Laminate Edge",
+        "canonical": "#BDB3A6",
+        "oklch": "oklch(77.1% 0.021 74.6)",
+        "tonalRamp": [
+          "#100A03",
+          "#2B2419",
+          "#494135",
+          "#696054",
+          "#8A8174",
+          "#ADA397",
+          "#D2C7BA",
+          "#F7EDDF"
+        ]
+      },
+      "on-hpl": {
+        "role": "neutral",
+        "displayName": "Pure White",
+        "canonical": "#FFFFFF",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "on-hpl-2": {
+        "role": "neutral",
+        "displayName": "Blush Laminate",
+        "canonical": "#F2D9D4",
+        "oklch": "oklch(90.4% 0.029 31.1)",
+        "tonalRamp": [
+          "#0F0A09",
+          "#2C2221",
+          "#4C3E3B",
+          "#6F5C58",
+          "#917D79",
+          "#B2A19D",
+          "#D3C6C3",
+          "#F5ECEB"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Workshop Ink",
+        "canonical": "#1C1A18",
+        "oklch": "oklch(21.9% 0.005 67.6)",
+        "tonalRamp": [
+          "#0C0B0A",
+          "#262524",
+          "#434240",
+          "#63615E",
+          "#84827F",
+          "#A6A5A3",
+          "#CAC9C7",
+          "#EFEEED"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink Grey",
+        "canonical": "#4B4642",
+        "oklch": "oklch(39.8% 0.009 61.2)",
+        "tonalRamp": [
+          "#0C0B0A",
+          "#272523",
+          "#45413E",
+          "#65605C",
+          "#86817D",
+          "#A8A4A1",
+          "#CCC8C6",
+          "#F0EEEC"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink Muted",
+        "canonical": "#5C5651",
+        "oklch": "oklch(45.7% 0.011 62.4)",
+        "tonalRamp": [
+          "#0C0B0A",
+          "#272422",
+          "#45413E",
+          "#66605B",
+          "#87817C",
+          "#A9A4A0",
+          "#CCC8C5",
+          "#F0EEEC"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Pencil Rule",
+        "canonical": "#B5B3AC",
+        "oklch": "oklch(76.6% 0.010 93.6)",
+        "tonalRamp": [
+          "#0C0B0A",
+          "#262522",
+          "#43423E",
+          "#63615B",
+          "#84827C",
+          "#A6A5A0",
+          "#CAC9C5",
+          "#EFEEEC"
+        ]
+      },
+      "night": {
+        "role": "neutral",
+        "displayName": "Night Charcoal",
+        "canonical": "#161413",
+        "oklch": "oklch(19.3% 0.004 48.5)",
+        "tonalRamp": [
+          "#0C0B0B",
+          "#262524",
+          "#434241",
+          "#63615F",
+          "#848280",
+          "#A6A4A3",
+          "#CAC9C8",
+          "#EFEEEE"
+        ]
+      },
+      "night-2": {
+        "role": "neutral",
+        "displayName": "Night Panel",
+        "canonical": "#24211F",
+        "oklch": "oklch(25.0% 0.006 56.1)",
+        "tonalRamp": [
+          "#0C0B0A",
+          "#262524",
+          "#444140",
+          "#64605E",
+          "#85817F",
+          "#A7A4A2",
+          "#CBC9C7",
+          "#EFEEED"
+        ]
+      },
+      "night-text": {
+        "role": "neutral",
+        "displayName": "Night Text",
+        "canonical": "#CFC7BF",
+        "oklch": "oklch(83.4% 0.014 67.6)",
+        "tonalRamp": [
+          "#0D0B09",
+          "#282421",
+          "#46413C",
+          "#66605A",
+          "#88817A",
+          "#A9A49E",
+          "#CCC8C4",
+          "#F1EEEB"
+        ]
+      },
+      "night-label": {
+        "role": "neutral",
+        "displayName": "Night Label",
+        "canonical": "#A79E95",
+        "oklch": "oklch(70.4% 0.017 67.6)",
+        "tonalRamp": [
+          "#0D0B09",
+          "#282421",
+          "#46413B",
+          "#676058",
+          "#898179",
+          "#AAA49D",
+          "#CDC8C3",
+          "#F1EEEB"
+        ]
+      },
+      "night-rule": {
+        "role": "neutral",
+        "displayName": "Night Rule",
+        "canonical": "#3A3532",
+        "oklch": "oklch(33.3% 0.009 53.2)",
+        "tonalRamp": [
+          "#0C0B0A",
+          "#272423",
+          "#45413F",
+          "#65605D",
+          "#86817E",
+          "#A8A4A1",
+          "#CCC8C6",
+          "#F0EEED"
+        ]
+      },
+      "field-stroke": {
+        "role": "neutral",
+        "displayName": "Field Stroke",
+        "canonical": "#8C867F",
+        "oklch": "oklch(62.3% 0.013 71.8)",
+        "tonalRamp": [
+          "#0E0B07",
+          "#2A2621",
+          "#49443E",
+          "#6B655F",
+          "#8E8881",
+          "#B2ADA6",
+          "#D5D0CA",
+          "#F3EEE8"
+        ]
+      },
+      "check-stroke": {
+        "role": "neutral",
+        "displayName": "Check Stroke",
+        "canonical": "#6E6863",
+        "oklch": "oklch(52.1% 0.011 62.4)",
+        "tonalRamp": [
+          "#0E0A08",
+          "#2A2622",
+          "#494440",
+          "#6B6560",
+          "#8E8883",
+          "#B2ADA8",
+          "#D5D0CB",
+          "#F3EDE9"
+        ]
+      },
+      "placeholder": {
+        "role": "neutral",
+        "displayName": "Placeholder Grey",
+        "canonical": "#7C756F",
+        "oklch": "oklch(56.7% 0.013 63.2)",
+        "tonalRamp": [
+          "#0E0A07",
+          "#2A2521",
+          "#4A443F",
+          "#6B655F",
+          "#8F8882",
+          "#B3ADA7",
+          "#D6D0CA",
+          "#F3EDE8"
+        ]
+      },
+      "sheet-edge": {
+        "role": "neutral",
+        "displayName": "Sheet Edge",
+        "canonical": "#CFC9C0",
+        "oklch": "oklch(83.8% 0.014 78.3)",
+        "tonalRamp": [
+          "#0C0B09",
+          "#272521",
+          "#45413C",
+          "#656059",
+          "#87827A",
+          "#A8A49E",
+          "#CCC9C4",
+          "#F0EEEB"
+        ]
+      },
+      "selected-tint": {
+        "role": "neutral",
+        "displayName": "Selected Tint",
+        "canonical": "#F7ECEA",
+        "oklch": "oklch(95.1% 0.012 29.9)",
+        "tonalRamp": [
+          "#0D0B0A",
+          "#282423",
+          "#47403F",
+          "#675F5D",
+          "#89807E",
+          "#AAA3A2",
+          "#CDC8C7",
+          "#F1EDED"
+        ]
+      },
+      "error": {
+        "role": "functional",
+        "displayName": "Error Red",
+        "canonical": "#B3261E",
+        "oklch": "oklch(50.1% 0.178 28.7)",
+        "tonalRamp": [
+          "#1E0000",
+          "#480A07",
+          "#771B15",
+          "#AA2E25",
+          "#D15447",
+          "#EA8476",
+          "#FFB2A7",
+          "#FFE0D8"
+        ]
+      },
+      "whatsapp": {
+        "role": "functional",
+        "displayName": "WhatsApp Green",
+        "canonical": "#1E8E4E",
+        "oklch": "oklch(57.1% 0.137 152.6)",
+        "tonalRamp": [
+          "#001003",
+          "#002E13",
+          "#005027",
+          "#0B753D",
+          "#3C975D",
+          "#74B787",
+          "#A6D7B3",
+          "#D9F8E0"
+        ]
+      },
+      "whatsapp-lift": {
+        "role": "functional",
+        "displayName": "WhatsApp Lift",
+        "canonical": "#22A05A",
+        "oklch": "oklch(62.3% 0.149 153.1)",
+        "tonalRamp": [
+          "#001500",
+          "#003500",
+          "#00581D",
+          "#007D3B",
+          "#30A15E",
+          "#65C686",
+          "#90E8AB",
+          "#B2FFCB"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "One oversized word inside the hero H1 (desktop and tablet)."
+      },
+      "display-mobile": {
+        "displayName": "Display Mobile",
+        "purpose": "The hero's big word under 760px."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section H2s."
+      },
+      "headline-sm": {
+        "displayName": "Headline Small",
+        "purpose": "Secondary H2s beside dense content (FAQ); hero H1 lead-in and closing H2 sit in the same band."
+      },
+      "headline-close": {
+        "displayName": "Headline Close",
+        "purpose": "The closing board's H2, the only text on that board."
+      },
+      "lead-in-mobile": {
+        "displayName": "Lead-in Mobile",
+        "purpose": "Hero H1 lead-in under 760px, flat 24px so the big word carries the line."
+      },
+      "subhead": {
+        "displayName": "Subhead",
+        "purpose": "Schedule headings, including the second table's heading; form sheet title at its 20px floor."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "H3s, sample-chip names, spec terms, FAQ questions, schedule brands."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "One-sentence statement under a headline; spec terms sit in Unbounded 600 at clamp(18px, 1.6vw, 22px)."
+      },
+      "offer": {
+        "displayName": "Offer",
+        "purpose": "The concrete offer line on the hero board under the lede (46ch); 15px under 760px."
+      },
+      "closing-line": {
+        "displayName": "Closing Line",
+        "purpose": "The closing paragraph in the why section (44ch), Montserrat because Unbounded never sets reading copy."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Paragraphs, max 62ch; 16px under 760px."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "Card, note, step and schedule detail copy; type tiles, footer, dock button. Hero chips at 700 in maroon; hero chip prompt 15px/700 in Blush Laminate."
+      },
+      "link": {
+        "displayName": "Link",
+        "purpose": "Underlined text links and text-styled buttons."
+      },
+      "field-label": {
+        "displayName": "Field Label",
+        "purpose": "Form labels and legends; uppercase nav links; small section notes."
+      },
+      "code-sm": {
+        "displayName": "Code Small",
+        "purpose": "Sample-chip sub-line (0.1em caps); step numbers at 0.16em; error and fine print in sentence case."
+      },
+      "label": {
+        "displayName": "Sample Code",
+        "purpose": "Tracked caps naming a physical thing: swatch, photo, column, step."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Button labels."
+      }
+    },
+    "materials": [
+      {
+        "name": "ply-h",
+        "value": "repeating-linear-gradient(180deg,var(--ply-a) 0 1.5px,var(--ply-b) 1.5px 2.5px,var(--ply-c) 2.5px 4px,var(--ply-d) 4px 5px)",
+        "purpose": "Horizontal plywood edge/rule (top edges, 5px rules under headers and spec rows, dock top)."
+      },
+      {
+        "name": "ply-v",
+        "value": "repeating-linear-gradient(90deg,var(--ply-a) 0 1.5px,var(--ply-b) 1.5px 2.5px,var(--ply-c) 2.5px 4px,var(--ply-d) 4px 5px)",
+        "purpose": "Vertical plywood edge on the side of a panel."
+      },
+      {
+        "name": "ply-edge-widths",
+        "value": "12px boards/sheet, 9px sample chips, 14px order section top, 6px dock, 5px rules",
+        "purpose": "Edge thickness by panel scale."
+      }
+    ],
+    "shadows": [
+      {
+        "name": "ply-seam",
+        "value": "inset 0 -2px 0 var(--hpl-deep)",
+        "purpose": "Seam between ply edge strip and laminate face (Sheet Edge #CFC9C0 on white panels)."
+      },
+      {
+        "name": "panel-thickness",
+        "value": "0 4px 0 var(--edge)",
+        "purpose": "Bottom edge of a button or hero chip in the control's own deeper tone (hpl-deep on primary, light-edge #BDB3A6 on the light button and hero chips, #14643A on WhatsApp); hover 0 6px 0, active 0 1px 0. Straight down, never black."
+      },
+      {
+        "name": "field-focus",
+        "value": "0 0 0 3px rgba(130,29,29,.18)",
+        "purpose": "Input focus halo."
+      },
+      {
+        "name": "paste-drop",
+        "value": "0 14px 18px -10px rgba(28,26,24,.45)",
+        "purpose": "Transient, start frame of the paste keyframe only."
+      },
+      {
+        "name": "layer-seam",
+        "value": "inset 0 -1px 0 rgba(0,0,0,.18)",
+        "purpose": "1px glue line under each ply layer in the process stack."
+      },
+      {
+        "name": "nav-legibility",
+        "value": "text-shadow: 0 1px 10px rgba(0,0,0,.55)",
+        "purpose": "One-off: white nav links over the hero photo only, with the 160px top scrim. Not a depth device; do not reuse."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Single easing for every transition."
+      },
+      {
+        "name": "button",
+        "value": "transform/box-shadow .25s, background .2s",
+        "purpose": "Lift and press on buttons and hero chips."
+      },
+      {
+        "name": "sample-lift",
+        "value": "transform .45s",
+        "purpose": "Sample chip straightens and lifts 12px."
+      },
+      {
+        "name": "hero-laminate",
+        "value": "clip-path inset(0 0 100% 0)->inset(0) .7s, no delay, on the board content; .ready set after two rAFs with a 300ms setTimeout fallback",
+        "purpose": "Hero board content laminates top-down on load. The board itself does not fade or slide."
+      },
+      {
+        "name": "layer-stack",
+        "value": "translateY(-26px)->0 .7s, staggered .05/.2/.35/.55s",
+        "purpose": "Process layers drop on scroll-in."
+      },
+      {
+        "name": "paste",
+        "value": "translateY(-10px) rotate(-1.5deg)->none .6s",
+        "purpose": "Project type pasted onto the form."
+      },
+      {
+        "name": "dock",
+        "value": "translateY(110%)->0 .45s; hero-chip IntersectionObserver attached 900ms after load (0 under reduced motion)",
+        "purpose": "Mobile dock slide-up when hero chips and form are both out of view. The observer waits for the lamination to finish so the clipped chips never read as scrolled past."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "All of the above disabled."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "1080px",
+        "purpose": "Splits collapse to one column; deck 2x2; 761-1080px hero board min(620px,64vw), hero caption top 96px."
+      },
+      {
+        "name": "mobile",
+        "value": "760px",
+        "purpose": "Hero photo 38svh (220-420px), hero lede hidden, hero caption top-left at 66px; deck snap strip aligned top; gallery caption second line hidden; schedule rows reflow; dock on."
+      }
+    ],
+    "focus": [
+      {
+        "name": "focus-light",
+        "value": "outline: 3px solid var(--hpl); outline-offset: 3px",
+        "purpose": "Focus ring on light grounds (concrete, white laminate, the form sheet). The form's type tiles use a 2px offset. Two programmatic focus targets draw no ring: the sheet title h3 (tabindex -1, focused on phones when a CTA sends the visitor to the form) and the sent-state #done block (focused on send; not a live region)."
+      },
+      {
+        "name": "focus-dark",
+        "value": "outline: 3px solid var(--ply-a); outline-offset: 3px",
+        "purpose": "Focus ring inside maroon and charcoal regions (.hero, .board, .order, .work, .close, footer); a .sheet inside .order switches back to focus-light."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Maroon laminate block with a same-hue bottom edge; main call to consult.",
+      "html": "<button class=\"ds-btn\">Konsultasikan proyek Anda <svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></button>",
+      "css": ":host{--hpl:#821D1D;--hpl-deep:#5E1414;--hpl-lift:#9B2823;--ply-a:#E6C998;--ply-b:#C99D63;--ply-c:#EDD5AA;--ply-d:#B4874F;--ground:#DCDCD8;--ground-2:#CDCDC7;--white-hpl:#F5F3EF;--ink:#1C1A18;--ink-2:#4B4642;--ink-3:#5C5651;--night:#161413;--night-2:#24211F;--on-hpl:#FFFFFF;--on-hpl-2:#F2D9D4;--rule:#B5B3AC;--display:\"Unbounded\",\"Montserrat\",system-ui,sans-serif;--text:\"Montserrat\",system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);--ply-h:repeating-linear-gradient(180deg,var(--ply-a) 0 1.5px,var(--ply-b) 1.5px 2.5px,var(--ply-c) 2.5px 4px,var(--ply-d) 4px 5px);--ply-v:repeating-linear-gradient(90deg,var(--ply-a) 0 1.5px,var(--ply-b) 1.5px 2.5px,var(--ply-c) 2.5px 4px,var(--ply-d) 4px 5px)}.ds-btn{--bg:var(--hpl);--fg:#fff;--edge:var(--hpl-deep);display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:54px;padding:0 26px;border:0;border-radius:4px;background:var(--bg);color:var(--fg);font-family:var(--text);font-weight:700;font-size:16px;letter-spacing:.01em;line-height:1.25;cursor:pointer;box-shadow:0 4px 0 var(--edge);transition:transform .25s var(--ease),box-shadow .25s var(--ease),background-color .2s}.ds-btn:hover{background:var(--hpl-lift);transform:translateY(-2px);box-shadow:0 6px 0 var(--edge)}.ds-btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--edge)}.ds-btn:focus-visible{outline:3px solid var(--hpl);outline-offset:3px}"
+    },
+    {
+      "name": "Light Button",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "White laminate button used on maroon boards.",
+      "html": "<div class=\"ds-stage\"><button class=\"ds-btn ds-btn--light\">Konsultasikan proyek Anda <svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></button></div>",
+      "css": ":host{--hpl:#821D1D;--hpl-deep:#5E1414;--hpl-lift:#9B2823;--ply-a:#E6C998;--ply-b:#C99D63;--ply-c:#EDD5AA;--ply-d:#B4874F;--ground:#DCDCD8;--ground-2:#CDCDC7;--white-hpl:#F5F3EF;--ink:#1C1A18;--ink-2:#4B4642;--ink-3:#5C5651;--night:#161413;--night-2:#24211F;--on-hpl:#FFFFFF;--on-hpl-2:#F2D9D4;--rule:#B5B3AC;--display:\"Unbounded\",\"Montserrat\",system-ui,sans-serif;--text:\"Montserrat\",system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);--ply-h:repeating-linear-gradient(180deg,var(--ply-a) 0 1.5px,var(--ply-b) 1.5px 2.5px,var(--ply-c) 2.5px 4px,var(--ply-d) 4px 5px);--ply-v:repeating-linear-gradient(90deg,var(--ply-a) 0 1.5px,var(--ply-b) 1.5px 2.5px,var(--ply-c) 2.5px 4px,var(--ply-d) 4px 5px)}.ds-btn{--bg:var(--hpl);--fg:#fff;--edge:var(--hpl-deep);display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:54px;padding:0 26px;border:0;border-radius:4px;background:var(--bg);color:var(--fg);font-family:var(--text);font-weight:700;font-size:16px;letter-spacing:.01em;line-height:1.25;cursor:pointer;box-shadow:0 4px 0 var(--edge);transition:transform .25s var(--ease),box-shadow .25s var(--ease),background-color .2s}.ds-btn:hover{background:var(--hpl-lift);transform:translateY(-2px);box-shadow:0 6px 0 var(--edge)}.ds-btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--edge)}.ds-btn:focus-visible{outline:3px solid var(--ply-a);outline-offset:3px}.ds-stage{background:var(--hpl);padding:28px}.ds-btn--light{--bg:var(--white-hpl);--fg:var(--hpl);--edge:#BDB3A6}.ds-btn--light:hover{background:#fff}"
+    },
+    {
+      "name": "Hero Project Chips",
+      "kind": "chip",
+      "refersTo": "chip-cta",
+      "description": "CTA buttons (not radios) on the maroon hero board: White Laminate blocks with a light-edge bottom thickness and trailing arrow. Nothing preselected; each adds its type to the form and scrolls there. 2×2 grid with short labels under 760px.",
+      "html": "<div class=\"ds-board\"><p class=\"ds-q\">Proyek apa yang sedang Anda siapkan?</p><div class=\"ds-chips\"><button class=\"ds-chip\" type=\"button\"><span>Booth pameran</span><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></button><button class=\"ds-chip\" type=\"button\"><span>Interior komersial</span><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></button><button class=\"ds-chip\" type=\"button\"><span>Pop-up booth</span><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></button><button class=\"ds-chip\" type=\"button\"><span>Event</span><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></button></div><a class=\"ds-alt\" href=\"#\">Belum yakin jenisnya? Ceritakan saja idenya <svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a></div>",
+      "css": ":host{--hpl:#821D1D;--hpl-deep:#5E1414;--hpl-lift:#9B2823;--ply-a:#E6C998;--ply-b:#C99D63;--ply-c:#EDD5AA;--ply-d:#B4874F;--ground:#DCDCD8;--ground-2:#CDCDC7;--white-hpl:#F5F3EF;--ink:#1C1A18;--ink-2:#4B4642;--ink-3:#5C5651;--night:#161413;--night-2:#24211F;--on-hpl:#FFFFFF;--on-hpl-2:#F2D9D4;--rule:#B5B3AC;--display:\"Unbounded\",\"Montserrat\",system-ui,sans-serif;--text:\"Montserrat\",system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);--ply-h:repeating-linear-gradient(180deg,var(--ply-a) 0 1.5px,var(--ply-b) 1.5px 2.5px,var(--ply-c) 2.5px 4px,var(--ply-d) 4px 5px);--ply-v:repeating-linear-gradient(90deg,var(--ply-a) 0 1.5px,var(--ply-b) 1.5px 2.5px,var(--ply-c) 2.5px 4px,var(--ply-d) 4px 5px)}.ds-board{background:var(--hpl);padding:24px;font-family:var(--text)}.ds-q{margin:0 0 12px;font-weight:700;font-size:15px;color:var(--on-hpl-2)}.ds-chips{display:flex;flex-wrap:wrap;gap:10px 8px;padding-bottom:4px}.ds-chip{display:inline-flex;align-items:center;justify-content:space-between;gap:8px;min-height:48px;padding:0 12px 0 14px;border:0;border-radius:4px;background:var(--white-hpl);color:var(--hpl);font-family:var(--text);font-weight:700;font-size:15px;cursor:pointer;box-shadow:0 4px 0 #BDB3A6;transition:transform .25s var(--ease),box-shadow .25s var(--ease),background-color .2s}.ds-chip svg{width:16px;height:16px;flex:none}.ds-chip:hover{background:#fff;transform:translateY(-2px);box-shadow:0 6px 0 #BDB3A6}.ds-chip:active{transform:translateY(3px);box-shadow:0 1px 0 #BDB3A6}.ds-chip:focus-visible,.ds-alt:focus-visible{outline:3px solid var(--ply-a);outline-offset:3px}.ds-alt{display:inline-flex;align-items:center;gap:.45em;min-height:44px;margin-top:10px;color:#fff;font-weight:700;font-size:15px;letter-spacing:.04em;text-decoration:underline;text-underline-offset:.22em;text-decoration-thickness:1.5px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field-input",
+      "description": "Sheet input with 1.5px stroke and maroon focus halo.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-n\">Nama</label><input id=\"ds-n\" class=\"ds-input\" placeholder=\"Nama Anda\"></div>",
+      "css": ":host{--hpl:#821D1D;--hpl-deep:#5E1414;--hpl-lift:#9B2823;--ply-a:#E6C998;--ply-b:#C99D63;--ply-c:#EDD5AA;--ply-d:#B4874F;--ground:#DCDCD8;--ground-2:#CDCDC7;--white-hpl:#F5F3EF;--ink:#1C1A18;--ink-2:#4B4642;--ink-3:#5C5651;--night:#161413;--night-2:#24211F;--on-hpl:#FFFFFF;--on-hpl-2:#F2D9D4;--rule:#B5B3AC;--display:\"Unbounded\",\"Montserrat\",system-ui,sans-serif;--text:\"Montserrat\",system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);--ply-h:repeating-linear-gradient(180deg,var(--ply-a) 0 1.5px,var(--ply-b) 1.5px 2.5px,var(--ply-c) 2.5px 4px,var(--ply-d) 4px 5px);--ply-v:repeating-linear-gradient(90deg,var(--ply-a) 0 1.5px,var(--ply-b) 1.5px 2.5px,var(--ply-c) 2.5px 4px,var(--ply-d) 4px 5px)}.ds-field{display:grid;gap:7px;font-family:var(--text);max-width:360px}.ds-field label{font-size:14px;font-weight:700;color:var(--ink)}.ds-input{min-height:50px;padding:12px 14px;border:1.5px solid #8C867F;border-radius:4px;background:#fff;font:500 16px var(--text);color:var(--ink);transition:border-color .2s,box-shadow .2s}.ds-input::placeholder{color:#7C756F}.ds-input:hover{border-color:var(--ink-3)}.ds-input:focus{outline:none;border-color:var(--hpl);box-shadow:0 0 0 3px rgba(130,29,29,.18)}"
+    },
+    {
+      "name": "HPL Board",
+      "kind": "card",
+      "refersTo": "hpl-board",
+      "description": "Signature maroon laminate field with exposed plywood edge on top and right.",
+      "html": "<div class=\"ds-wrap\"><div class=\"ds-board\"><h2>Turn your brand into an <span>experience.</span></h2><p>We build spaces that make brands stand out.</p></div></div>",
+      "css": ":host{--hpl:#821D1D;--hpl-deep:#5E1414;--hpl-lift:#9B2823;--ply-a:#E6C998;--ply-b:#C99D63;--ply-c:#EDD5AA;--ply-d:#B4874F;--ground:#DCDCD8;--ground-2:#CDCDC7;--white-hpl:#F5F3EF;--ink:#1C1A18;--ink-2:#4B4642;--ink-3:#5C5651;--night:#161413;--night-2:#24211F;--on-hpl:#FFFFFF;--on-hpl-2:#F2D9D4;--rule:#B5B3AC;--display:\"Unbounded\",\"Montserrat\",system-ui,sans-serif;--text:\"Montserrat\",system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);--ply-h:repeating-linear-gradient(180deg,var(--ply-a) 0 1.5px,var(--ply-b) 1.5px 2.5px,var(--ply-c) 2.5px 4px,var(--ply-d) 4px 5px);--ply-v:repeating-linear-gradient(90deg,var(--ply-a) 0 1.5px,var(--ply-b) 1.5px 2.5px,var(--ply-c) 2.5px 4px,var(--ply-d) 4px 5px)}.ds-wrap{padding:24px 24px 8px 8px;background:var(--ground)}.ds-board{position:relative;background:var(--hpl);color:#fff;padding:28px 32px}.ds-board::before{content:\"\";position:absolute;left:0;right:0;bottom:100%;height:12px;background:var(--ply-h);box-shadow:inset 0 -2px 0 var(--hpl-deep)}.ds-board::after{content:\"\";position:absolute;top:-12px;bottom:0;left:100%;width:12px;background:var(--ply-v);box-shadow:inset 2px 0 0 var(--hpl-deep)}.ds-board h2{margin:0;font:600 28px/1.08 var(--display);letter-spacing:-.02em}.ds-board h2 span{display:block;font-size:52px;font-weight:700;letter-spacing:-.04em;line-height:.95}.ds-board p{margin:.9em 0 0;font:500 18px/1.35 var(--display);color:var(--on-hpl-2)}"
+    },
+    {
+      "name": "Sample Chip",
+      "kind": "card",
+      "refersTo": "sample-chip",
+      "description": "Service shown as a material swatch: punch-hole, sample code, photo, title, CTA; straightens and lifts on hover.",
+      "html": "<div class=\"ds-table\"><article class=\"ds-sample\"><div class=\"ds-top\"><span class=\"ds-hole\"></span><span class=\"ds-code\">HN · Booth</span></div><div class=\"ds-fig\"></div><h3>Exhibition Booth</h3><span class=\"ds-sub\">Design &amp; Build</span><p>Booth pameran yang didesain dan dibangun satu tim.</p><button class=\"ds-link\">Pilih sampel ini</button></article></div>",
+      "css": ":host{--hpl:#821D1D;--hpl-deep:#5E1414;--hpl-lift:#9B2823;--ply-a:#E6C998;--ply-b:#C99D63;--ply-c:#EDD5AA;--ply-d:#B4874F;--ground:#DCDCD8;--ground-2:#CDCDC7;--white-hpl:#F5F3EF;--ink:#1C1A18;--ink-2:#4B4642;--ink-3:#5C5651;--night:#161413;--night-2:#24211F;--on-hpl:#FFFFFF;--on-hpl-2:#F2D9D4;--rule:#B5B3AC;--display:\"Unbounded\",\"Montserrat\",system-ui,sans-serif;--text:\"Montserrat\",system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);--ply-h:repeating-linear-gradient(180deg,var(--ply-a) 0 1.5px,var(--ply-b) 1.5px 2.5px,var(--ply-c) 2.5px 4px,var(--ply-d) 4px 5px);--ply-v:repeating-linear-gradient(90deg,var(--ply-a) 0 1.5px,var(--ply-b) 1.5px 2.5px,var(--ply-c) 2.5px 4px,var(--ply-d) 4px 5px)}.ds-table{background:var(--ground-2);padding:32px 28px 20px}.ds-sample{position:relative;width:240px;background:var(--white-hpl);color:var(--ink);padding:16px 16px 22px;font-family:var(--text);transform:rotate(-1deg);transition:transform .45s var(--ease)}.ds-sample::before{content:\"\";position:absolute;left:0;right:0;bottom:100%;height:9px;background:var(--ply-h);box-shadow:inset 0 -2px 0 #CFC9C0}.ds-sample::after{content:\"\";position:absolute;top:-9px;bottom:0;left:100%;width:9px;background:var(--ply-v);box-shadow:inset 2px 0 0 #CFC9C0}.ds-sample:hover,.ds-sample:focus-within{transform:rotate(0) translateY(-12px)}.ds-top{display:flex;align-items:center;gap:10px;margin-bottom:12px;color:var(--ink-2)}.ds-hole{width:16px;height:16px;border-radius:50%;background:var(--ground-2)}.ds-code{font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase}.ds-fig{aspect-ratio:4/5;background:#9a9188}.ds-sample h3{margin:18px 0 0;font:600 20px/1.2 var(--display);letter-spacing:-.01em}.ds-sub{display:block;margin-top:4px;color:var(--ink-2);font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}.ds-sample p{margin:12px 0 18px;font-size:15px;line-height:1.55;color:var(--ink-2)}.ds-link{background:none;border:0;padding:6px 0;font:700 15px var(--text);letter-spacing:.04em;text-decoration:underline;color:var(--ink);cursor:pointer}.ds-link:focus-visible{outline:3px solid var(--hpl);outline-offset:3px}"
+    },
+    {
+      "name": "Form Sheet with Type Options",
+      "kind": "custom",
+      "refersTo": "sheet",
+      "description": "White laminate sheet with ply edge, punch-hole, ruled title, a 15px/600 reassurance lead, multi-select project-type tiles (square ticks; Error Red borders when none chosen; a 13px/600 maroon polite status note collapsed when empty), and a rule-topped proof line (award tag + one line) above submit; tiles stay 2x2 under 760px.",
+      "html": "<div class=\"ds-ord\"><div class=\"ds-sheet\"><span class=\"ds-ph\"></span><div class=\"ds-title\"><h3>Ceritakan proyek Anda</h3><span>± 1 menit</span></div><p class=\"ds-lead\">Belum punya desain final? Tidak masalah, cukup ceritakan idenya.</p><div class=\"ds-types\"><label class=\"ds-type\"><input type=\"checkbox\" name=\"ds-y\" checked><span>Booth pameran</span></label><label class=\"ds-type\"><input type=\"checkbox\" name=\"ds-y\"><span>Interior komersial</span></label></div><p class=\"ds-tnote\">Booth pameran sudah dipilih.</p><p class=\"ds-proof\"><span class=\"ds-award\">Best Booth Design ×2</span><span>EVOPET, IIPE 2025 &amp; 2026.</span></p></div></div>",
+      "css": ":host{--hpl:#821D1D;--hpl-deep:#5E1414;--hpl-lift:#9B2823;--ply-a:#E6C998;--ply-b:#C99D63;--ply-c:#EDD5AA;--ply-d:#B4874F;--ground:#DCDCD8;--ground-2:#CDCDC7;--white-hpl:#F5F3EF;--ink:#1C1A18;--ink-2:#4B4642;--ink-3:#5C5651;--night:#161413;--night-2:#24211F;--on-hpl:#FFFFFF;--on-hpl-2:#F2D9D4;--rule:#B5B3AC;--display:\"Unbounded\",\"Montserrat\",system-ui,sans-serif;--text:\"Montserrat\",system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);--ply-h:repeating-linear-gradient(180deg,var(--ply-a) 0 1.5px,var(--ply-b) 1.5px 2.5px,var(--ply-c) 2.5px 4px,var(--ply-d) 4px 5px);--ply-v:repeating-linear-gradient(90deg,var(--ply-a) 0 1.5px,var(--ply-b) 1.5px 2.5px,var(--ply-c) 2.5px 4px,var(--ply-d) 4px 5px)}.ds-ord{background:var(--hpl);padding:28px 28px 16px 16px}.ds-sheet{position:relative;background:var(--white-hpl);color:var(--ink);padding:28px;font-family:var(--text)}.ds-sheet::before{content:\"\";position:absolute;left:0;right:0;bottom:100%;height:12px;background:var(--ply-h);box-shadow:inset 0 -2px 0 #CFC9C0}.ds-sheet::after{content:\"\";position:absolute;top:-12px;bottom:0;left:100%;width:12px;background:var(--ply-v);box-shadow:inset 2px 0 0 #CFC9C0}.ds-ph{position:absolute;top:18px;right:18px;width:16px;height:16px;border-radius:50%;background:var(--hpl)}.ds-title{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:0 28px 16px 0;margin-bottom:22px;border-bottom:1px solid var(--rule)}.ds-title h3{margin:0;font:600 20px/1.2 var(--display)}.ds-title span{font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3)}.ds-types{display:grid;grid-template-columns:1fr 1fr;gap:8px}.ds-type{position:relative}.ds-type input{position:absolute;opacity:0}.ds-type span{display:flex;align-items:center;gap:10px;min-height:50px;padding:10px 14px;border:1.5px solid #8C867F;border-radius:4px;background:#fff;font-weight:600;font-size:15px;cursor:pointer;transition:border-color .2s,background-color .2s,color .2s}.ds-type span::before{content:\"\";width:12px;height:12px;border-radius:2px;border:1.5px solid #6E6863}.ds-type span:hover{border-color:var(--ink-3)}.ds-type input:checked+span{border-color:var(--hpl);background:#F7ECEA;color:var(--hpl)}.ds-type input:checked+span::before{background:var(--hpl);border-color:var(--hpl)}.ds-type input:focus-visible+span{outline:3px solid var(--hpl);outline-offset:2px}.ds-lead{margin:-8px 0 20px;font-size:15px;font-weight:600;color:var(--ink-2)}.ds-tnote{margin:8px 0 0;font-size:13px;font-weight:600;color:var(--hpl)}.ds-tnote:empty{display:none}.ds-proof{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin:18px 0 0;padding:12px 0 0;border-top:1px solid var(--rule);font-size:14px;font-weight:600;color:var(--ink-2)}.ds-award{display:inline-block;padding:2px 8px;background:var(--hpl);color:#fff;font:700 12px var(--text);letter-spacing:.06em;text-transform:uppercase;border-radius:2px}"
+    },
+    {
+      "name": "Project Schedule",
+      "kind": "custom",
+      "refersTo": "award-tag",
+      "description": "Both schedules use the plain variant: 3 columns (brand, event/location, scope), no year column; ply-ruled headers, Night Rule rows, brand in the title face, maroon award tags (a repeat award is one row with a count). Under 760px: header hides, brand spans full width, event/location below left, scope in an auto-width right column, bottom-aligned, 14px Night Text.",
+      "html": "<table class=\"ds-sched\"><thead><tr><th>Brand</th><th>Event</th><th>Lingkup</th></tr></thead><tbody><tr><td>EVOPET <span class=\"ds-award\">Best Booth Design ×2</span></td><td>IIPE 2025 &amp; IIPE 2026</td><td>Booth pameran</td></tr><tr><td>MODENA</td><td>Home Center</td><td>Showroom</td></tr></tbody></table>",
+      "css": ":host{--hpl:#821D1D;--hpl-deep:#5E1414;--hpl-lift:#9B2823;--ply-a:#E6C998;--ply-b:#C99D63;--ply-c:#EDD5AA;--ply-d:#B4874F;--ground:#DCDCD8;--ground-2:#CDCDC7;--white-hpl:#F5F3EF;--ink:#1C1A18;--ink-2:#4B4642;--ink-3:#5C5651;--night:#161413;--night-2:#24211F;--on-hpl:#FFFFFF;--on-hpl-2:#F2D9D4;--rule:#B5B3AC;--display:\"Unbounded\",\"Montserrat\",system-ui,sans-serif;--text:\"Montserrat\",system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);--ply-h:repeating-linear-gradient(180deg,var(--ply-a) 0 1.5px,var(--ply-b) 1.5px 2.5px,var(--ply-c) 2.5px 4px,var(--ply-d) 4px 5px);--ply-v:repeating-linear-gradient(90deg,var(--ply-a) 0 1.5px,var(--ply-b) 1.5px 2.5px,var(--ply-c) 2.5px 4px,var(--ply-d) 4px 5px)}.ds-sched{width:100%;border-collapse:collapse;background:var(--night);color:#fff;font-family:var(--text);font-variant-numeric:tabular-nums}.ds-sched th{text-align:left;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#A79E95;padding:16px 12px 12px 16px;border-bottom:5px solid transparent;border-image:var(--ply-h) 5}.ds-sched td{padding:16px 12px 16px 16px;border-bottom:1px solid #3A3532;color:#CFC7BF;font-size:15px}.ds-sched td:first-child{font:600 17px var(--display);color:#fff}.ds-award{display:inline-block;margin-left:10px;padding:2px 8px;background:var(--hpl);color:#fff;font:700 12px var(--text);letter-spacing:.06em;text-transform:uppercase;border-radius:2px;vertical-align:2px}.ds-sched td:last-child{font-weight:500}"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "whatsapp-pill",
+      "description": "Over-photo header: uppercase text links and white laminate WhatsApp pill.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-logo\">HANUMAN</span><div class=\"ds-r\"><a href=\"#\" class=\"ds-plain\">Proyek</a><a href=\"#\" class=\"ds-plain\">Konsultasi</a><a href=\"#\" class=\"ds-wa\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.94L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41\"/></svg>Chat WhatsApp</a></div></nav>",
+      "css": ":host{--hpl:#821D1D;--hpl-deep:#5E1414;--hpl-lift:#9B2823;--ply-a:#E6C998;--ply-b:#C99D63;--ply-c:#EDD5AA;--ply-d:#B4874F;--ground:#DCDCD8;--ground-2:#CDCDC7;--white-hpl:#F5F3EF;--ink:#1C1A18;--ink-2:#4B4642;--ink-3:#5C5651;--night:#161413;--night-2:#24211F;--on-hpl:#FFFFFF;--on-hpl-2:#F2D9D4;--rule:#B5B3AC;--display:\"Unbounded\",\"Montserrat\",system-ui,sans-serif;--text:\"Montserrat\",system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);--ply-h:repeating-linear-gradient(180deg,var(--ply-a) 0 1.5px,var(--ply-b) 1.5px 2.5px,var(--ply-c) 2.5px 4px,var(--ply-d) 4px 5px);--ply-v:repeating-linear-gradient(90deg,var(--ply-a) 0 1.5px,var(--ply-b) 1.5px 2.5px,var(--ply-c) 2.5px 4px,var(--ply-d) 4px 5px)}.ds-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 24px;background:#3d3a36;font-family:var(--text)}.ds-logo{background:var(--hpl);color:#fff;font:700 16px var(--display);padding:6px 16px;border-radius:999px}.ds-r{display:flex;align-items:center;gap:22px}.ds-plain{display:inline-block;padding:11px 0;color:#fff;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}.ds-plain:hover{text-decoration:underline}.ds-wa{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 16px;border-radius:999px;background:var(--white-hpl);color:var(--ink);font-weight:700;font-size:14px;text-decoration:none}.ds-wa svg{color:#1E8E4E}.ds-wa:hover{background:#fff}.ds-plain:focus-visible,.ds-wa:focus-visible{outline:3px solid var(--ply-a);outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Workshop Sample Board",
+    "overview": "**Creative North Star: \"The Workshop Sample Board\"**\n\nHanuman builds booths and interiors from laminate-faced plywood, so the page is built from the same stock. Big fields are matte maroon HPL. Wherever a panel ends, its plywood core shows as a band of layered tan stripes. Panels are mounted over real build photographs and laid on a concrete-grey workshop ground, and charcoal \"night\" bands carry the built work. Nothing is rendered as glossy, glowing, or soft. Depth comes from boards stacked on boards and from edges you can see.\n\nDensity is generous and confident. Sections breathe on a 88–150px vertical rhythm, and display type is wide, rounded, and set tight like the logo. Small details come from a contractor's sample library: tracked Montserrat caps work as sample codes, round punch-holes mark swatches, and ruled schedules list projects. Motion only shows assembly: the hero board laminates down into place, process layers stack, and a chosen project type gets pasted onto the form.\n\nThe world rejects the dark-overlay hero with a centred white headline, rows of equal service cards, gradients used as decoration, and fake glow.",
+    "keyCharacteristics": [
+      "Maroon HPL fields with an exposed plywood edge on the top and one side.",
+      "Square-cornered panels; soft radii only on small controls (2–4px).",
+      "Wide geometric display face (Unbounded) over a medium-weight Montserrat body.",
+      "Depth from layering and visible panel thickness, never from blur shadows.",
+      "Real project photography as the substrate panels sit on.",
+      "Motion shows how things get built: laminate, stack, paste."
+    ],
+    "rules": [
+      {
+        "name": "The One Laminate Rule",
+        "body": "Maroon is the only chromatic accent. A new section gets a new finish of the same stock (maroon, white laminate, veneer, charcoal), never a new hue.",
+        "section": "colors"
+      },
+      {
+        "name": "The Plies Travel Together Rule",
+        "body": "The four ply tones are never used one at a time as fills. They show up as the striped edge or rule, because that is what plywood looks like when it is cut.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Rings Rule",
+        "body": "Focus is a 3px outline offset 3px (2px on the form's type tiles). It is Hanuman Maroon on light grounds (concrete, white laminate, the form sheet) and Pale Ply on maroon and charcoal (hero, boards, order section, built work, closing, footer). A white sheet inside a maroon section switches back to maroon.",
+        "section": "colors"
+      },
+      {
+        "name": "The Sample Code Rule",
+        "body": "Tracked caps label a physical thing: a swatch, a photo, a table column, a step. They never float above a headline as a section kicker.",
+        "section": "typography"
+      },
+      {
+        "name": "The Marked Language Rule",
+        "body": "Display copy is English inside an Indonesian page. Every English heading, lede, spec term, and service sub-label carries `lang=\"en\"` so it is voiced and hyphenated as English; Indonesian reading copy inherits the page language.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Big Word Rule",
+        "body": "The display size belongs to a single word inside the H1. Headlines elsewhere stay at headline scale.",
+        "section": "typography"
+      },
+      {
+        "name": "The Signboard Rule",
+        "body": "Unbounded sets headings, one-sentence ledes, and short labels (spec terms, schedule brand names, the footer tagline). It never sets a paragraph of reading copy; closing lines, offers, and client lists are Montserrat at 600–700.",
+        "section": "typography"
+      },
+      {
+        "name": "The Visible Edge Rule",
+        "body": "If something is raised, show its edge: a ply band or a same-hue thickness line. If you can't say what material the edge is, don't add the depth.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do end every maroon or white panel with a ply edge on the top and one side (12px on boards and sheets, 9px on chips), with the 2px seam line in the panel's core tone.",
+      "Do use the four ply tones only together, as the 5px-repeat stripe, for edges and rules.",
+      "Do keep panels square-cut and reserve 2–4px corners for controls, tags, and captions.",
+      "Do mount boards over real project photography and let them overhang the section boundary.",
+      "Do use tracked Montserrat caps (12px, 0.18em) to label physical things: swatches, photos, columns, steps.",
+      "Do give raised controls a straight-down bottom edge in their own deeper tone (0 4px 0), lifting on hover and sinking on press.",
+      "Do draw focus as the 3px ring: Hanuman Maroon on light grounds, Pale Ply on maroon and charcoal.",
+      "Do use square ticks for multi-select, and keep round dots for single-choice controls only (none exist today).",
+      "Do set reading copy in Montserrat; keep Unbounded to headings, one-sentence ledes, and short labels.",
+      "Do honour `prefers-reduced-motion`: lamination, stacking, paste, and lift transitions all switch off."
+    ],
+    "donts": [
+      "Don't put a dark full-bleed overlay with a centred white headline over the hero photo, or lay services out as a row of equal cards.",
+      "Don't use gradients as surface decoration or glow. The repeating-gradient ply stripe and the swatch marker are material, not ornament.",
+      "Don't use ambient blur shadows on panels at rest. Depth comes from stacked layers and visible edges.",
+      "Don't introduce a second chromatic accent. WhatsApp Green stays on the WhatsApp control only.",
+      "Don't place tracked-caps labels above section headlines as kickers.",
+      "Don't give a button's thickness edge a sideways offset or a black fill.",
+      "Don't launch with any `[ISI: …]` placeholder mark on the page, and don't reuse its yellow anywhere else."
+    ]
+  }
+}

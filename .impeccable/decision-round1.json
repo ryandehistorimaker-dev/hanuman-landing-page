@@ -1,0 +1,174 @@
+{
+  "title": "Pilih arah visual landing page Hanuman",
+  "question": "Undian memilih arah 'Papan Sampel Material'. Pakai ini, ambil alternatif, atau undi ulang.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Papan Sampel Material",
+      "kicker": "THE ROLL",
+      "lineage": "Papan sampel HPL & multipleks di meja workshop kontraktor",
+      "thesis": "Halaman dibangun dari bahan yang sama dengan booth-nya: lapisan multipleks, HPL maroon, kode sampel.",
+      "palette": [
+        "#841F1F",
+        "#D9B98A",
+        "#EDE7DD",
+        "#1C1A18",
+        "#5E1414"
+      ],
+      "materials": [
+        "tepi multipleks berlapis",
+        "laminasi HPL doff maroon",
+        "label kode sampel"
+      ],
+      "viewport": "Foto booth Chandra Asri penuh layar, di atasnya panel HPL maroon bertepi multipleks berisi headline dan tombol 'Konsultasikan Proyek'; strip chip sampel berisi 4 layanan di bawahnya.",
+      "risk": "Kalau tekstur kayu dipakai setengah hati, jatuhnya jadi template 'interior hangat' biasa.",
+      "raised": [
+        {
+          "from": "challenger-papercut",
+          "raise": "Kedalaman hanya dari tumpukan lapisan dan tepi yang terlihat, tanpa gradient atau bayangan palsu."
+        },
+        {
+          "from": "challenger-splitflap",
+          "raise": "Daftar proyek jadi tabel jadwal berjajar: event, venue, tahun, lingkup, dalam sel tetap."
+        },
+        {
+          "from": "challenger-shader",
+          "raise": "Satu kata display raksasa melawan label kecil; kontras skala yang tegas, bukan ukuran tengah-tengah."
+        }
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Denah Hall Pameran",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Floor plan hall ICE BSD / JIExpo dengan nomor stand",
+      "thesis": "Halaman dibaca seperti denah pameran: setiap proyek adalah stand bernomor yang sudah 'terbangun'.",
+      "palette": [
+        "#F4F2EE",
+        "#841F1F",
+        "#1E2A3A",
+        "#B8B2A7"
+      ],
+      "materials": [
+        "garis denah tipis",
+        "blok stand maroon",
+        "nomor stand & ukuran (6×9 m)"
+      ],
+      "viewport": "Denah hall putih dengan blok-blok stand; satu blok maroon besar terbuka jadi foto proyek dan headline, form singkat di 'meja registrasi' kanan.",
+      "risk": "Familiar bagi orang event, tapi bisa terasa teknis/dingin untuk klien interior."
+    },
+    {
+      "id": "challenger-arcade",
+      "label": "Lorong Pameran Bercahaya",
+      "verdict": "competitive",
+      "lineage": "Lorong hall gelap dengan fascia booth backlit",
+      "thesis": "Lorong pameran gelap; setiap layanan adalah booth dengan papan fascia menyala.",
+      "palette": [
+        "#121012",
+        "#841F1F",
+        "#F5EFE6",
+        "#E0A458"
+      ],
+      "materials": [
+        "fascia lightbox",
+        "karpet hall",
+        "cahaya spot"
+      ],
+      "viewport": "Hero foto booth malam, fascia maroon menyala berisi logo; 4 booth layanan berjajar seperti satu lorong.",
+      "case": "Pengunjung pameran langsung mengenali suasananya; kalah tipis di kejelasan untuk layanan interior.",
+      "risk": "Gelap total bisa terasa seperti event organizer, bukan kontraktor yang membangun.",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-arcade-marquee-row-hero.webp"
+    },
+    {
+      "id": "challenger-splitflap",
+      "label": "Papan Jadwal Split-Flap",
+      "verdict": "declined",
+      "lineage": "Papan keberangkatan stasiun",
+      "palette": [
+        "#111111",
+        "#F2F2F2",
+        "#E2A33B"
+      ],
+      "materials": [
+        "flap hitam",
+        "huruf putih kondensed"
+      ],
+      "thesis": "Proyek tampil sebagai papan keberangkatan.",
+      "viewport": "Papan flap berisi nama event dan venue.",
+      "risk": "Tidak ada hubungan dengan konstruksi.",
+      "case": "Klien tidak mengaitkan diri dengan papan stasiun.",
+      "kept": "Daftar proyek sebagai tabel jadwal bersel tetap.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-split-flap-concourse-hero.webp"
+    },
+    {
+      "id": "challenger-papercut",
+      "label": "Papercut Berlapis",
+      "verdict": "declined",
+      "lineage": "Papercut Łowicz",
+      "palette": [
+        "#C8102E",
+        "#1B5E20",
+        "#FFD23F",
+        "#F7F3EA"
+      ],
+      "materials": [
+        "kertas warna datar berlapis"
+      ],
+      "thesis": "Kedalaman dari lapisan potongan.",
+      "viewport": "Roundel berlapis.",
+      "risk": "Terlalu folk-craft untuk brand korporat.",
+      "case": "Tidak dikenali audiens, tidak memperjelas layanan.",
+      "kept": "Kedalaman dari lapisan, bukan bayangan.",
+      "hero": "https://impeccable.style/worlds/cards/craft-making-lowicz-layered-papercut-hero.webp"
+    },
+    {
+      "id": "challenger-shader",
+      "label": "Portal Shader WebGL",
+      "verdict": "declined",
+      "lineage": "Situs studio eksperiensial",
+      "palette": [
+        "#0C0C14",
+        "#841F1F",
+        "#FFFFFF"
+      ],
+      "materials": [
+        "shader layar penuh",
+        "grain"
+      ],
+      "thesis": "Satu kata raksasa di atas piksel hidup.",
+      "viewport": "Shader maroon penuh layar.",
+      "risk": "Berat di HP, menyembunyikan karya nyata.",
+      "case": "Foto proyek nyata lebih meyakinkan daripada efek.",
+      "kept": "Kontras skala ekstrem pada headline.",
+      "hero": "https://impeccable.style/worlds/cards/webgl-shader-portal-hero.webp"
+    }
+  ],
+  "reroll": {
+    "registers": [
+      "safer",
+      "bolder"
+    ]
+  },
+  "buildPath": {
+    "value": "code",
+    "toggle": false
+  },
+  "canon": true,
+  "canonCard": {
+    "label": "Standar kategori",
+    "thesis": "Landing page kontraktor booth pada umumnya, dikerjakan rapi.",
+    "palette": [
+      "#FFFFFF",
+      "#111111",
+      "#841F1F"
+    ],
+    "materials": [
+      "hero foto + overlay gelap",
+      "grid kartu layanan"
+    ],
+    "viewport": "Foto booth dengan overlay gelap, headline putih di tengah, dua tombol, lalu kartu layanan.",
+    "risk": "Sama persis dengan kompetitor; tidak ada yang diingat."
+  },
+  "steer": true,
+  "seedKey": "e2349c1f"
+}

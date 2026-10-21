@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+
+# Original full-res downloads from hanumanexpo.com (44 MB); the page ships the resized copies in assets/
+raw/
+
+# Generated upload folder for Netlify Drop (rebuilt from index.html + assets/ with noindex)
+preview/
+
+# Local tooling and caches
+.claude/
+.impeccable/review/
+.impeccable/live/
+.impeccable/questions/
+.impeccable/hook.cache.json
+.impeccable/shot.sh
+.omc/
