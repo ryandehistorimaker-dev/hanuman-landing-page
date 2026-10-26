@@ -36,55 +36,55 @@ colors:
   whatsapp-lift: "#22A05A"
 typography:
   display:
-    fontFamily: "Unbounded, Montserrat, system-ui, sans-serif"
+    fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif"
     fontSize: "clamp(46px, 6.4vw, 94px)"
     fontWeight: 700
     lineHeight: 0.95
     letterSpacing: "-0.04em"
   display-mobile:
-    fontFamily: "Unbounded, Montserrat, system-ui, sans-serif"
+    fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif"
     fontSize: "clamp(40px, 12vw, 64px)"
     fontWeight: 700
     lineHeight: 0.95
     letterSpacing: "-0.04em"
   headline:
-    fontFamily: "Unbounded, Montserrat, system-ui, sans-serif"
+    fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif"
     fontSize: "clamp(30px, 4.4vw, 58px)"
     fontWeight: 600
     lineHeight: 1.08
     letterSpacing: "-0.02em"
   headline-sm:
-    fontFamily: "Unbounded, Montserrat, system-ui, sans-serif"
+    fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif"
     fontSize: "clamp(28px, 3.4vw, 44px)"
     fontWeight: 600
     lineHeight: 1.08
     letterSpacing: "-0.02em"
   headline-close:
-    fontFamily: "Unbounded, Montserrat, system-ui, sans-serif"
+    fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif"
     fontSize: "clamp(28px, 4vw, 52px)"
     fontWeight: 600
     lineHeight: 1.08
     letterSpacing: "-0.02em"
   lead-in-mobile:
-    fontFamily: "Unbounded, Montserrat, system-ui, sans-serif"
+    fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif"
     fontSize: "24px"
     fontWeight: 600
     lineHeight: 1.08
     letterSpacing: "-0.02em"
   subhead:
-    fontFamily: "Unbounded, Montserrat, system-ui, sans-serif"
+    fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif"
     fontSize: "clamp(20px, 2vw, 26px)"
     fontWeight: 600
     lineHeight: 1.2
     letterSpacing: "-0.01em"
   title:
-    fontFamily: "Unbounded, Montserrat, system-ui, sans-serif"
+    fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif"
     fontSize: "clamp(19px, 1.6vw, 22px)"
     fontWeight: 600
     lineHeight: 1.2
     letterSpacing: "-0.01em"
   lede:
-    fontFamily: "Unbounded, Montserrat, system-ui, sans-serif"
+    fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif"
     fontSize: "clamp(17px, 1.5vw, 21px)"
     fontWeight: 500
     lineHeight: 1.35
@@ -273,7 +273,7 @@ The world rejects the dark-overlay hero with a centred white headline, rows of e
 **Key Characteristics:**
 - Maroon HPL fields with an exposed plywood edge on the top and one side.
 - Square-cornered panels; soft radii only on small controls (2–4px).
-- Wide geometric display face (Unbounded) over a medium-weight Montserrat body.
+- One family throughout: Montserrat 700–800 for display, medium-weight Montserrat for body (client asked for Montserrat/Helvetica only).
 - Depth from layering and visible panel thickness, never from blur shadows.
 - Real project photography as the substrate panels sit on.
 - Motion shows how things get built: laminate, stack, paste.
@@ -321,11 +321,11 @@ The palette is one material in three finishes: maroon laminate, plywood core, an
 
 ## Typography
 
-**Display Font:** Unbounded (with Montserrat, system-ui fallback)
+**Display Font:** Montserrat 700–800 (Helvetica Neue, Helvetica, Arial fallback)
 **Body Font:** Montserrat (with system-ui fallback)
 **Label Font:** Montserrat, tracked caps
 
-**Character:** Unbounded's wide, rounded geometry echoes the HANUMAN wordmark. Montserrat matches the tracked tagline under the logo. Together they read like a signboard over a spec sheet: Unbounded is the sign, Montserrat carries everything you read.
+**Character:** Montserrat matches the tracked tagline under the logo. Weight does the work a second face used to: heavy Montserrat is the sign, medium Montserrat carries everything you read.
 
 ### Hierarchy
 - **Display** (700, clamp(46px, 6.4vw, 94px), 0.95, -0.04em): One oversized word per surface, inside the H1 on the hero board ("experience."). Under 760px it switches to Display Mobile (clamp(40px, 12vw, 64px)).
@@ -333,7 +333,7 @@ The palette is one material in three finishes: maroon laminate, plywood core, an
 - **Headline Small** (600, clamp(28px, 3.4vw, 44px)): Secondary H2s that sit beside denser content (FAQ) and the hero H1 lead-in (clamp(28px, 3.3vw, 46px)). The closing board's H2 is Headline Close (clamp(28px, 4vw, 52px)), wider at the top end because it is the only text on its board. Under 760px the hero lead-in drops to a flat 24px (Lead-in Mobile) so the big word carries the line.
 - **Subhead** (600, clamp(20px, 2vw, 26px), 1.2): Schedule headings, including the second schedule table's heading; the form sheet title sits at its 20px floor.
 - **Title** (600, clamp(19px, 1.6vw, 22px), 1.2, -0.01em): H3s, sample-chip names, spec terms, FAQ questions (16–19px), schedule brand names. Process step titles step up to clamp(22px, 2vw, 28px).
-- **Lede** (Unbounded 500, clamp(17px, 1.5vw, 21px), 1.35): The one-line statement under a headline, never more than a single sentence. Spec terms sit in Unbounded 600 at clamp(18px, 1.6vw, 22px).
+- **Lede** (Montserrat 600, clamp(17px, 1.5vw, 21px), 1.35): The one-line statement under a headline, never more than a single sentence. Spec terms sit in Montserrat 700 at clamp(18px, 1.6vw, 22px).
 - **Offer** (Montserrat 600, clamp(16px, 1.3vw, 18px), 1.5, white): The concrete offer line on the hero board under the lede, capped at 46ch; 15px under 760px.
 - **Closing Line** (Montserrat 600, clamp(17px, 1.4vw, 19px), 1.55): The closing paragraph in the why section, capped at 44ch, in Workshop Ink.
 - **Body** (Montserrat 500, 17px / 16px under 760px, 1.6): Paragraphs capped at 62ch. The order section's lead question sets body at 600.
@@ -350,7 +350,7 @@ The palette is one material in three finishes: maroon laminate, plywood core, an
 
 **The One Big Word Rule.** The display size belongs to a single word inside the H1. Headlines elsewhere stay at headline scale.
 
-**The Signboard Rule.** Unbounded sets headings, one-sentence ledes, and short labels (spec terms, schedule brand names, the footer tagline). It never sets a paragraph of reading copy; closing lines, offers, and client lists are Montserrat at 600–700.
+**The Signboard Rule.** Heavy Montserrat (700–800) sets headings, one-sentence ledes, and short labels (spec terms, schedule brand names, the footer tagline). It never sets a paragraph of reading copy; closing lines, offers, and client lists are Montserrat at 600–700.
 
 ## Layout
 
@@ -465,7 +465,7 @@ Native disclosure rows between Pencil Rules, with questions in the title face. T
 - **Do** give raised controls a straight-down bottom edge in their own deeper tone (0 4px 0), lifting on hover and sinking on press.
 - **Do** draw focus as the 3px ring: Hanuman Maroon on light grounds, Pale Ply on maroon and charcoal.
 - **Do** use square ticks for multi-select, and keep round dots for single-choice controls only (none exist today).
-- **Do** set reading copy in Montserrat; keep Unbounded to headings, one-sentence ledes, and short labels.
+- **Do** set reading copy in Montserrat; keep the 700–800 weights to headings, one-sentence ledes, and short labels.
 - **Do** honour `prefers-reduced-motion`: lamination, stacking, paste, and lift transitions all switch off.
 
 ### Don't:

@@ -36,7 +36,7 @@
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/hero-chandra-asri.jpg">
 <style>
 :root{
@@ -58,8 +58,8 @@
   --on-hpl:#FFFFFF;
   --on-hpl-2:#F2D9D4;
   --rule:#B5B3AC;
-  --display:"Unbounded", "Montserrat", system-ui, sans-serif;
-  --text:"Montserrat", system-ui, sans-serif;
+  --display:"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --text:"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --gutter:clamp(16px, 4.2vw, 64px);
   --max:1320px;
   --ease:cubic-bezier(.16,1,.3,1);
@@ -86,10 +86,10 @@ html{scrollbar-color:var(--hpl) var(--ground-2)}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 
 /* ---------- type ---------- */
-h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.08;letter-spacing:-.02em;margin:0;text-wrap:balance}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.1;letter-spacing:-.02em;margin:0;text-wrap:balance}
 h2{font-size:clamp(30px,4.4vw,58px)}
 h3{font-size:clamp(19px,1.6vw,22px);letter-spacing:-.01em;line-height:1.2}
-.lede{font-family:var(--display);font-weight:500;font-size:clamp(17px,1.5vw,21px);line-height:1.35;letter-spacing:-.01em;margin:.7em 0 0;color:var(--ink-2)}
+.lede{font-family:var(--display);font-weight:600;font-size:clamp(17px,1.5vw,21px);line-height:1.35;letter-spacing:-.01em;margin:.7em 0 0;color:var(--ink-2)}
 p{margin:0 0 1em;max-width:62ch}
 .code{font-family:var(--text);font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
 
@@ -128,20 +128,17 @@ p{margin:0 0 1em;max-width:62ch}
 .hero-photo{position:absolute;inset:0;z-index:-1;overflow:hidden;background:var(--night)}
 .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:62% 55%}
 .hero-photo::after{content:"";position:absolute;inset:0 0 auto 0;height:160px;background:linear-gradient(rgba(16,14,13,.55),rgba(16,14,13,0))}
-.hero-cap{position:absolute;right:var(--gutter);bottom:28px;z-index:1;background:var(--white-hpl);color:var(--ink);padding:7px 12px 7px 26px;border-radius:2px}
-.hero-cap::before{content:"";position:absolute;left:10px;top:50%;width:8px;height:8px;margin-top:-4px;border-radius:50%;background:var(--ground-2)}
 .hero-board{width:min(760px,62vw);margin-left:var(--gutter);margin-bottom:-40px;padding:clamp(24px,2.8vw,42px) clamp(24px,3.4vw,52px) clamp(24px,2.6vw,36px);z-index:2}
 .hero h1{font-size:clamp(28px,3.3vw,46px);font-weight:600;color:#fff}
-.hero h1 .big{display:block;font-size:clamp(46px,6.4vw,94px);font-weight:700;letter-spacing:-.04em;line-height:.95;margin-top:.08em}
+.hero h1 .big{display:block;font-size:clamp(46px,6.4vw,94px);font-weight:800;letter-spacing:-.04em;line-height:.95;margin-top:.08em}
 .hero .lede{color:var(--on-hpl-2);margin-top:.6em}
-.hero-body{margin:.9em 0 0;color:#fff;font-size:clamp(16px,1.3vw,18px);font-weight:600;line-height:1.5;max-width:46ch}
-.pick-q{margin:22px 0 12px;font-weight:700;font-size:15px;color:var(--on-hpl-2)}
-.chips{display:flex;flex-wrap:wrap;gap:10px 8px;padding-bottom:4px}
-.chip{display:inline-flex;align-items:center;justify-content:space-between;gap:8px;min-height:48px;padding:0 12px 0 14px;border:0;border-radius:4px;background:var(--white-hpl);color:var(--hpl);font-family:var(--text);font-weight:700;font-size:15px;cursor:pointer;box-shadow:0 4px 0 #BDB3A6;transition:transform .25s var(--ease),box-shadow .25s var(--ease),background-color .2s}
-.chip svg{width:16px;height:16px;flex:none}
-.chip:hover{background:#fff;transform:translateY(-2px);box-shadow:0 6px 0 #BDB3A6}
-.chip:active{transform:translateY(3px);box-shadow:0 1px 0 #BDB3A6}
-.hero-alt{color:#fff;margin-top:10px;font-size:15px}
+.hero-body{margin:.9em 0 0;color:#fff;font-size:clamp(15px,1.2vw,17px);font-weight:500;line-height:1.55;max-width:56ch}
+.hero-body+.hero-body{margin-top:.7em}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px 14px;margin-top:24px;padding-bottom:4px}
+.btn--ghost{--bg:transparent;--fg:#fff;--edge:transparent;box-shadow:inset 0 0 0 2px rgba(255,255,255,.75)}
+.btn--ghost:hover{background:rgba(255,255,255,.12);box-shadow:inset 0 0 0 2px #fff}
+.btn--ghost:active{box-shadow:inset 0 0 0 2px #fff}
+.hero-tag{margin:18px 0 0;color:var(--on-hpl-2);font-weight:700;font-size:15px}
 
 /* ---------- clients ---------- */
 .clients{padding:40px 0 0}
@@ -165,32 +162,29 @@ section.s{padding:clamp(88px,10vw,150px) 0}
 .space-list{list-style:none;margin:28px 0 30px;padding:0;border-top:1px solid var(--rule)}
 .space-list li{display:grid;grid-template-columns:34px 1fr;gap:14px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--rule);font-weight:600;color:var(--ink)}
 .space-list .mk{position:relative;top:2px;width:22px;height:16px;background:linear-gradient(var(--ply-b) 0 4px,var(--hpl) 4px)}
+.space-lead{font-weight:700;color:var(--ink);margin:1.4em 0 0}
+.space-list+p{color:var(--ink-2)}
+.space .btn{margin-top:8px}
 
 /* ---------- services: sample chips ---------- */
 .samples{background:var(--ground-2);position:relative}
 .samples-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:20px 40px;margin-bottom:clamp(36px,5vw,64px)}
-.deck{display:grid;grid-template-columns:1.12fr .94fr 1.04fr .9fr;gap:clamp(22px,2.4vw,34px);align-items:end;padding-top:30px}
-.chipcard{--face:var(--white-hpl);--fg:var(--ink);--fg2:var(--ink-2);--hole:var(--ground-2);--edge:#CFC9C0;position:relative;background:var(--face);color:var(--fg);padding:16px 16px 22px;border-radius:0;transform:rotate(var(--r,0deg)) translateY(var(--y,0));transition:transform .45s var(--ease);z-index:var(--z,1);display:flex;flex-direction:column}
-.chipcard::before{content:"";position:absolute;left:0;right:0;bottom:100%;height:9px;background:var(--ply-h);box-shadow:inset 0 -2px 0 var(--edge)}
-.chipcard::after{content:"";position:absolute;top:-9px;bottom:0;left:100%;width:9px;background:var(--ply-v);box-shadow:inset 2px 0 0 var(--edge)}
-.chipcard:nth-child(1){--r:-1deg;--y:0px;--z:1}
-.chipcard:nth-child(1) figure{aspect-ratio:4/5}
-.chipcard:nth-child(2){--r:.8deg;--y:-28px;--z:2;--face:#D9B583;--fg:var(--ink);--fg2:#3A2814;--edge:#A9824F}
-.chipcard:nth-child(2) figure{aspect-ratio:1/1}
-.chipcard:nth-child(3){--r:-.6deg;--y:12px;--z:3;--face:var(--night-2);--fg:#fff;--fg2:#D2CBC4;--edge:#000}
-.chipcard:nth-child(3) figure{aspect-ratio:5/4}
-.chipcard:nth-child(4){--r:1.2deg;--y:-12px;--z:4;--face:var(--hpl);--fg:#fff;--fg2:var(--on-hpl-2);--edge:var(--hpl-deep)}
-.chipcard:nth-child(4) figure{aspect-ratio:3/4}
-.chipcard:hover,.chipcard:focus-within{--r:0deg;z-index:10;transform:rotate(0) translateY(calc(var(--y,0px) - 12px))}
+.offer-label{margin:0 0 18px;color:var(--hpl);font-weight:800;font-size:clamp(18px,1.6vw,22px);letter-spacing:-.01em}
+.deck{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(16px,1.8vw,24px);align-items:stretch}
+.chipcard{--face:var(--white-hpl);--fg:var(--ink);--fg2:var(--ink-2);--hole:var(--ground-2);position:relative;background:var(--face);color:var(--fg);padding:16px 16px 22px;display:flex;flex-direction:column;transition:transform .35s var(--ease)}
+.chipcard:nth-child(2){--face:var(--hpl);--fg:#fff;--fg2:var(--on-hpl-2);--hole:var(--hpl-deep)}
+.chipcard:nth-child(3){--face:var(--night-2);--fg:#fff;--fg2:#D2CBC4;--hole:#3A3532}
+.chipcard:nth-child(4){--face:var(--hpl-deep);--fg:#fff;--fg2:var(--on-hpl-2);--hole:#43100F}
+.chipcard:hover,.chipcard:focus-within{transform:translateY(-6px)}
 .chipcard-top{display:flex;align-items:center;gap:10px;margin-bottom:12px;color:var(--fg2)}
 .hole{width:16px;height:16px;border-radius:50%;background:var(--hole)}
-.chipcard figure{margin:0;overflow:hidden;border-radius:0;background:var(--ground-2)}
+.chipcard figure{margin:0;overflow:hidden;border-radius:0;background:var(--ground-2);aspect-ratio:4/3}
 .chipcard figure img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
 .chipcard:hover figure img{transform:scale(1.04)}
-.chipcard h3{margin-top:18px}
-.chipcard .sub{display:block;margin-top:4px;color:var(--fg2);font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.chipcard .num{display:block;margin-top:18px;color:var(--fg2);font-size:13px;font-weight:700;letter-spacing:.16em}
+.chipcard h3{margin-top:4px}
 .chipcard p{margin:12px 0 18px;font-size:15px;line-height:1.55;color:var(--fg2)}
-.chipcard .link{align-self:flex-start;white-space:nowrap;margin-top:auto;color:var(--fg);background:none;border:0;padding:6px 0;cursor:pointer;text-align:left}
+.chipcard .link{align-self:flex-start;margin-top:auto;color:var(--fg);background:none;border:0;padding:6px 0;cursor:pointer;text-align:left}
 .samples-foot{margin-top:clamp(48px,6vw,72px);display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px}
 .samples-foot p{margin:0;color:var(--ink-2);font-weight:600}
 
@@ -222,16 +216,14 @@ section.s{padding:clamp(88px,10vw,150px) 0}
 .schedule-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px 24px;margin-bottom:14px}
 .schedule-head h3{color:#fff;font-size:clamp(20px,2vw,26px)}
 .schedule-head .code{color:#A79E95}
-.table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
-.table th{text-align:left;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#A79E95;padding:0 12px 12px 0;border-bottom:5px solid transparent;border-image:var(--ply-h) 5}
-.table td{padding:16px 12px 16px 0;border-bottom:1px solid #3A3532;vertical-align:baseline}
-.table td:first-child{font-family:var(--display);font-weight:600;font-size:clamp(15px,1.3vw,18px);color:#fff}
-.table td:nth-child(2),.table td:nth-child(3){color:#CFC7BF;font-size:15px}
-.table td:last-child{text-align:right;padding-right:0;color:#fff;font-weight:700}
-.table th:last-child{text-align:right;padding-right:0}
 .award{display:inline-block;margin-left:10px;padding:2px 8px;background:var(--hpl);color:#fff;font-family:var(--text);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:2px;vertical-align:2px;white-space:nowrap}
-.work-foot{margin-top:40px;display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center}
-.work-foot .link{color:#fff}
+.projects{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 48px;border-top:5px solid transparent;border-image:var(--ply-h) 5}
+.projects li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;padding:16px 0;border-bottom:1px solid #3A3532}
+.pj-name{font-weight:700;font-size:clamp(16px,1.3vw,18px);color:#fff}
+.pj-sub{color:#CFC7BF;font-size:15px}
+.projects .award{margin-left:0;vertical-align:0}
+.work-foot{margin-top:40px;display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;justify-content:space-between}
+.work-foot p{margin:0;color:#CFC7BF;max-width:56ch}
 
 /* ---------- why hanuman: spec sheet ---------- */
 .why-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,6vw,96px)}
@@ -255,11 +247,10 @@ section.s{padding:clamp(88px,10vw,150px) 0}
 .order-q{margin-top:1.6em;font-weight:600}
 .h2-sm{font-size:clamp(28px,3.4vw,44px)}
 .linkbtn{background:none;border:0;padding:0;cursor:pointer;color:var(--hpl)}
-.table-sub{margin:52px 0 14px;color:#fff;font-size:clamp(20px,2vw,26px)}
-.table--plain td:last-child,.table--plain th:last-child{text-align:left;font-weight:500;color:#CFC7BF}
 .gallery-more{display:none}
-.order-direct{margin-top:26px;font-size:15px;color:var(--on-hpl-2)}
-.order-direct a{color:#fff;font-weight:700;display:inline-block;padding:10px 0}
+.order-ctas{display:flex;flex-direction:column;align-items:flex-start;gap:14px;margin-top:28px}
+.order-ctas .btn{min-width:min(320px,100%)}
+.order-direct{margin-top:26px;font-size:15px;font-weight:600;color:var(--on-hpl-2)}
 
 #sheet{scroll-margin-top:28px}
 .sheet{position:relative;background:var(--white-hpl);color:var(--ink);border-radius:0;padding:clamp(24px,3vw,40px);margin-top:12px;margin-right:12px}
@@ -376,18 +367,16 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
   .js .hero-board,.js .hero-board .lam,.js .steps .layer{transform:none!important;opacity:1!important;clip-path:none!important;transition:none!important}
   .type.pasted span{animation:none}
   .chipcard,.chipcard figure img,.gallery img,.btn{transition:none}
+  .chipcard:hover,.chipcard:focus-within{transform:none}
 }
 
 /* ---------- responsive ---------- */
 @media (max-width:1080px){
-  .deck{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 22px;padding-top:0}
-  .chipcard{margin-right:0}
-  .chipcard:nth-child(n){--y:0px}
+  .deck{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
   .work-intro,.why-grid,.order-grid,.faq-grid,.space-grid{grid-template-columns:1fr}
   .clients .wrap{grid-template-columns:1fr}
   .clients-inner{grid-column:1}
   .hero-board{width:min(760px,calc(100% - 2*var(--gutter) - 12px))}
-  .hero-cap{top:96px;bottom:auto}
   .hero-board{width:min(620px,64vw)}
   .clients{padding-top:76px}
 }
@@ -399,41 +388,31 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
   .hero{display:block;min-height:0}
   .hero-photo{position:relative;height:38svh;min-height:220px;max-height:420px}
   .hero-photo img{object-position:60% 50%}
-  .hero-cap{top:66px;bottom:auto;left:16px;right:auto}
   .hero-board{margin:-30px 0 0 var(--gutter);width:calc(100% - 2*var(--gutter));padding:24px 20px 26px}
-  .hero .lede{display:none}
+  .hero .lede{font-size:16px}
   .hero-body{font-size:15px;margin-top:.6em}
-  .pick-q{margin:16px 0 10px;font-size:14px}
-  .chips{display:grid;grid-template-columns:1fr 1fr;gap:10px 8px}
-  .chip{width:100%;padding:0 12px 0 14px;white-space:nowrap}
   .long{display:none}
-  .hero-alt{margin-top:8px;font-size:14px}
+  .hero-ctas{display:grid;grid-template-columns:1fr}
+  .hero-tag{font-size:14px}
   .hero h1{font-size:24px}
   .hero h1 .big{font-size:clamp(40px,12vw,64px)}
   .clients{padding-top:44px}
   .space{padding-top:88px!important}
   .deck{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin-inline:calc(-1*var(--gutter));padding:12px var(--gutter) 28px;scrollbar-width:none}
   .deck::-webkit-scrollbar{display:none}
-  .deck{padding-top:22px;align-items:flex-start}
+  .deck{padding-top:8px;align-items:stretch}
   .chipcard .link{margin-top:0}
   .gallery figcaption small{display:none}
-  .chipcard{flex:0 0 76%;scroll-snap-align:center;--r:0deg!important;--y:0px!important;margin-right:9px}
-  .chipcard figure{aspect-ratio:4/3!important}
+  .projects{grid-template-columns:1fr}
+  .order-ctas .btn{width:100%}
+  .chipcard{flex:0 0 78%;scroll-snap-align:center}
   .gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:150px;gap:8px}
   .gallery figure{grid-column:span 1!important;grid-row:span 1!important}
   .gallery .g1{grid-column:span 2!important;grid-row:span 2!important}
   .gallery .g10,.gallery .g11{grid-column:span 2!important}
   .gallery:not(.all) .g6,.gallery:not(.all) .g7,.gallery:not(.all) .g8,.gallery:not(.all) .g9,.gallery:not(.all) .g10,.gallery:not(.all) .g11{display:none}
   .gallery-more{display:inline-flex;margin-top:14px;color:#fff;background:none;border:0;padding:0;cursor:pointer}
-  .table thead{display:none}
-  .table,.table tbody,.table tr,.table td{display:block;width:100%}
-  .table tr{padding:14px 0;border-bottom:1px solid #3A3532;display:grid;grid-template-columns:1fr auto;gap:2px 12px}
-  .table td{border:0;padding:0}
-  .table td:first-child{grid-column:1/-1}
-  .table td:nth-child(2){grid-column:1}
-  .table td:nth-child(3){grid-column:1;font-size:14px}
-  .table td:last-child{grid-row:2/4;grid-column:2;align-self:end}
-  .spec-row{grid-template-columns:1fr;gap:8px}
+                  .spec-row{grid-template-columns:1fr;gap:8px}
   .steps{grid-template-columns:1fr 1fr;gap:36px 18px}
   .stack{height:96px}
   .row2{grid-template-columns:1fr}
@@ -477,25 +456,19 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
   <section class="hero" aria-labelledby="hero-h">
     <div class="hero-photo">
       <img src="assets/hero-chandra-asri.jpg" width="2000" height="1500" alt="Booth pameran Chandra Asri dengan struktur gantung heksagonal dan panel biru, dikerjakan Hanuman" fetchpriority="high">
-      <p class="hero-cap code">Chandra Asri · Booth pameran</p>
     </div>
 
     <div class="board hero-board">
       <div class="lam">
         <h1 id="hero-h" lang="en">Turn your brand into an <span class="big">experience.</span></h1>
-        <p class="lede" lang="en">We build spaces that make brands stand out.</p>
-        <p class="hero-body">Booth pameran, pop-up, dan interior komersial di Jakarta dan Tangerang, didesain dan dibangun oleh satu tim sejak 2015.</p>
-
-        <p class="pick-q" id="pick-q">Proyek apa yang sedang Anda siapkan?</p>
-        <div class="chips" role="group" aria-labelledby="pick-q">
-          <button class="chip" type="button" data-type="Booth pameran"><span>Booth<span class="long"> pameran</span></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-          <button class="chip" type="button" data-type="Interior komersial"><span>Interior<span class="long"> komersial</span></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-          <button class="chip" type="button" data-type="Pop-up booth"><span>Pop-up<span class="long"> booth</span></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-          <button class="chip" type="button" data-type="Event"><span>Event</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <p class="lede" lang="en">We Build Spaces That Make Brands Stand Out.</p>
+        <p class="hero-body">Dari booth pameran yang mencuri perhatian hingga interior yang memperkuat identitas brand, Hanuman Construction membantu mewujudkan ide menjadi ruang yang dirancang untuk menarik perhatian, menciptakan pengalaman, dan meninggalkan kesan.</p>
+        <p class="hero-body">Dengan pengalaman sejak 2015, kami mendampingi brand dalam proses desain, produksi, hingga realisasi ruang yang sesuai dengan tujuan bisnis Anda.</p>
+        <div class="hero-ctas">
+          <a class="btn btn--light" href="#konsultasi" data-goto-form="hero">Konsultasikan proyek Anda</a>
+          <a class="btn btn--ghost" href="https://hanumanexpo.com/" target="_blank" rel="noopener" data-track="portfolio_hero">Jelajahi portofolio kami <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         </div>
-        <a class="link hero-alt" href="#konsultasi" data-goto-form="hero"><span>Belum yakin<span class="long"> jenisnya</span>? Ceritakan<span class="long"> saja</span> idenya</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
+        <p class="hero-tag" lang="en">Tell us your vision. Let's build something remarkable.</p>
       </div>
     </div>
   </section>
@@ -519,11 +492,16 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
         <h2 id="space-h" lang="en">Your brand deserves more than just a space.</h2>
       </div>
       <div>
-        <p>Di hall pameran, booth Anda berdiri di antara puluhan brand lain yang sama-sama berebut perhatian. Ruang yang dirancang dengan benar harus bekerja lebih keras daripada sekadar terlihat bagus:</p>
+        <p>Di tengah banyaknya brand yang bersaing mendapatkan perhatian, sebuah ruang harus mampu melakukan lebih dari sekadar terlihat menarik.</p>
+        <p class="space-lead">Ruang yang dirancang dengan tepat dapat membantu brand:</p>
         <ul class="space-list">
-          <li><span class="mk" aria-hidden="true"></span>Membuat pengunjung menoleh sejak dari ujung lorong.</li>
-          <li><span class="mk" aria-hidden="true"></span>Mengatur alur, area demo, dan penyimpanan supaya setiap meter persegi benar-benar terpakai.</li>
+          <li><span class="mk" aria-hidden="true"></span>Menarik perhatian pengunjung sejak pandangan pertama.</li>
+          <li><span class="mk" aria-hidden="true"></span>Menyampaikan identitas dan pesan brand dengan lebih kuat.</li>
+          <li><span class="mk" aria-hidden="true"></span>Menciptakan pengalaman yang berkesan bagi calon pelanggan.</li>
+          <li><span class="mk" aria-hidden="true"></span>Mengoptimalkan fungsi ruang untuk mendukung tujuan bisnis.</li>
         </ul>
+        <p>Kami percaya bahwa setiap proyek memiliki cerita dan tujuan yang berbeda. Karena itu, setiap ruang perlu direncanakan dengan pendekatan yang tepat, mulai dari konsep hingga eksekusi.</p>
+        <a class="btn" href="#konsultasi" data-goto-form="space">Diskusikan ide Anda bersama kami</a>
       </div>
     </div>
   </section>
@@ -534,51 +512,52 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
       <div class="samples-head">
         <div class="s-head">
           <h2 id="svc-h" lang="en">From concept to reality.</h2>
+          <p class="lede" lang="en">One Partner. Multiple Possibilities.</p>
         </div>
       </div>
 
+      <p class="offer-label" lang="en">What We Offer?</p>
       <div class="deck">
         <article class="chipcard">
-          <div class="chipcard-top"><span class="hole" aria-hidden="true"></span><span class="code">HN · Booth</span></div>
+          <div class="chipcard-top"><span class="hole" aria-hidden="true"></span><span class="code" lang="en">Booth</span></div>
           <figure><img src="assets/booth-toto.jpg" width="1400" height="1047" loading="lazy" alt="Booth pameran putih dengan dinding lengkung untuk Surya Pertiwi dan TOTO"></figure>
-          <h3 lang="en">Exhibition Booth</h3>
-          <span class="sub" lang="en">Design &amp; Build</span>
-          <p>Booth yang membawa karakter brand, menarik pengunjung, dan mendukung target Anda selama pameran.</p>
-          <button class="link" type="button" data-type="Booth pameran">Konsultasikan booth
+          <span class="num">01</span>
+          <h3 lang="en">Exhibition Booth Design &amp; Build</h3>
+          <p>Hadirkan booth yang mencerminkan karakter brand, menarik perhatian pengunjung, dan mendukung tujuan partisipasi Anda dalam pameran.</p>
+          <button class="link" type="button" data-type="Booth pameran">Diskusikan kebutuhan booth
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
         </article>
         <article class="chipcard">
-          <div class="chipcard-top"><span class="hole" aria-hidden="true"></span><span class="code">HN · Interior</span></div>
+          <div class="chipcard-top"><span class="hole" aria-hidden="true"></span><span class="code" lang="en">Interior</span></div>
           <figure><img src="assets/interior-lounge.jpg" width="1400" height="934" loading="lazy" alt="Interior komersial dengan dinding kayu, lampu tersembunyi, dan tanaman"></figure>
-          <h3 lang="en">Interior</h3>
-          <span class="sub" lang="en">Design &amp; Construction</span>
-          <p>Showroom, kantor, dan ruang F&amp;B, dikerjakan sesuai lingkup, fungsi ruang, karakter brand, dan anggaran yang disepakati.</p>
-          <button class="link" type="button" data-type="Interior komersial">Konsultasikan interior
+          <span class="num">02</span>
+          <h3 lang="en">Interior Design &amp; Construction</h3>
+          <p>Pengerjaan interior komersial sesuai ruang lingkup proyek, kebutuhan fungsi, karakter brand, dan anggaran yang disepakati.</p>
+          <button class="link" type="button" data-type="Interior komersial">Diskusikan kebutuhan interior
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
         </article>
         <article class="chipcard">
-          <div class="chipcard-top"><span class="hole" aria-hidden="true"></span><span class="code">HN · Pop-up</span></div>
+          <div class="chipcard-top"><span class="hole" aria-hidden="true"></span><span class="code" lang="en">Pop Up</span></div>
           <figure><img src="assets/popup-uniqlo.jpg" width="1400" height="789" loading="lazy" alt="Pop-up booth UNIQLO berbentuk terowongan kuning di area luar mal"></figure>
-          <h3 lang="en">Pop Up Booth</h3>
-          <span class="sub" lang="en">Design &amp; Build</span>
-          <p>Pop-up di mal atau ruang publik dengan konsep yang jelas, penataan yang pas, dan pemasangan yang mengikuti jadwal acara.</p>
-          <button class="link" type="button" data-type="Pop-up booth">Konsultasikan pop-up
+          <span class="num">03</span>
+          <h3 lang="en">Pop Up Booth Design &amp; Build</h3>
+          <p>Ciptakan suasana acara yang lebih terkonsep melalui penataan ruang dan eksekusi yang sesuai dengan kebutuhan event.</p>
+          <button class="link" type="button" data-type="Pop-up booth">Diskusikan kebutuhan pop-up
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
         </article>
         <article class="chipcard">
-          <div class="chipcard-top"><span class="hole" aria-hidden="true"></span><span class="code">HN · Event</span></div>
+          <div class="chipcard-top"><span class="hole" aria-hidden="true"></span><span class="code" lang="en">Event</span></div>
           <figure><img src="assets/event-installation.jpg" width="1400" height="788" loading="lazy" alt="Instalasi dekorasi event berbentuk pohon dengan cincin bertuliskan nama acara"></figure>
-          <h3 lang="en">Event</h3>
-          <span class="sub" lang="en">Support · Design &amp; Build</span>
-          <p>Dekorasi venue dan elemen event, dengan koordinasi pelaksanaan yang terarah dari satu tim.</p>
-          <button class="link" type="button" data-type="Event">Konsultasikan event
+          <span class="num">04</span>
+          <h3 lang="en">Support Event Design &amp; Build</h3>
+          <p>Dukung kebutuhan event Anda melalui koordinasi dan pengelolaan pelaksanaan yang terarah.</p>
+          <button class="link" type="button" data-type="Event">Diskusikan kebutuhan event
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
         </article>
       </div>
 
       <div class="samples-foot">
-        <a class="btn" href="#konsultasi" data-goto-form="services">Konsultasikan proyek Anda</a>
-        <p>Proyek Anda gabungan beberapa layanan? Itu biasa. Ceritakan saja semuanya.</p>
+        <a class="btn" href="#konsultasi" data-goto-form="services">Temukan solusi untuk proyek Anda</a>
       </div>
     </div>
   </section>
@@ -589,9 +568,9 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
       <div class="work-intro">
         <div class="s-head">
           <h2 id="work-h" lang="en">Built for brands that want to make an impact.</h2>
-          <p class="lede" lang="en">Real projects. Real experiences.</p>
+          <p class="lede" lang="en">Real Projects. Real Experiences.</p>
         </div>
-        <p>Portofolio kami mencakup booth pameran, showroom, ruang komersial, sampai dekorasi event. Tiap brand datang dengan tantangan sendiri, dan hasilnya pun punya karakter masing-masing.</p>
+        <p>Setiap proyek membawa tantangan, kebutuhan, dan tujuan yang berbeda. Portofolio kami mencakup pengerjaan booth pameran, ruang komersial, showroom, hingga kebutuhan interior dan event.</p>
       </div>
 
       <div class="gallery">
@@ -612,32 +591,25 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
 
       <div class="schedule">
         <div class="schedule-head">
-          <h3 lang="en">Selected projects</h3>
+          <h3 lang="en">Selected Projects</h3>
         </div>
-        <table class="table table--plain">
-          <thead><tr><th scope="col">Brand</th><th scope="col">Event</th><th scope="col">Lingkup</th></tr></thead>
-          <tbody>
-            <tr><td>EVOPET <span class="award">Best Booth Design ×2</span></td><td>IIPE 2025 &amp; IIPE 2026</td><td>Booth pameran</td></tr>
-            <tr><td>SKAYU &amp; BK Studio</td><td>ARCH 2026</td><td>Booth pameran</td></tr>
-            <tr><td>BCA</td><td>BCA Expo 2026</td><td>Booth pameran</td></tr>
-            <tr><td>AICA</td><td>Indo Build Tech 2026</td><td>Booth pameran</td></tr>
-          </tbody>
-        </table>
-        <h3 class="table-sub">Interior &amp; showroom</h3>
-        <table class="table table--plain">
-          <thead><tr><th scope="col">Brand</th><th scope="col">Lokasi / ruang</th><th scope="col">Lingkup</th></tr></thead>
-          <tbody>
-            <tr><td>MODENA</td><td>Home Center</td><td>Showroom</td></tr>
-            <tr><td>BRI</td><td>Hyper Local Room</td><td>Interior</td></tr>
-            <tr><td>KIA</td><td>Showroom</td><td>Interior showroom</td></tr>
-            <tr><td>Jonkira</td><td>Pecenongan</td><td>Interior F&amp;B</td></tr>
-            <tr><td>SHEM Ramen &amp; Sushi</td><td>Restoran</td><td>Interior F&amp;B</td></tr>
-          </tbody>
-        </table>
+        <ul class="projects">
+          <li><span class="pj-name">EVOPET</span> <span class="pj-sub">IIPE 2026</span> <span class="award" lang="en">Best Booth Design</span></li>
+          <li><span class="pj-name">SKAYU &amp; BK Studio</span> <span class="pj-sub">ARCH 2026</span></li>
+          <li><span class="pj-name">BCA Expo 2026</span></li>
+          <li><span class="pj-name">AICA</span> <span class="pj-sub">IBT 2026</span></li>
+          <li><span class="pj-name">EVOPET</span> <span class="pj-sub">IIPE 2025</span> <span class="award" lang="en">Best Booth Design</span></li>
+          <li><span class="pj-name">MODENA</span> <span class="pj-sub">Home Center</span></li>
+          <li><span class="pj-name">BRI</span> <span class="pj-sub">Hyper Local Room</span></li>
+          <li><span class="pj-name">KIA</span> <span class="pj-sub">Showroom</span></li>
+          <li><span class="pj-name">Jonkira</span> <span class="pj-sub">Pecenongan</span></li>
+          <li><span class="pj-name">SHEM Ramen &amp; Sushi</span></li>
+        </ul>
       </div>
 
       <div class="work-foot">
-        <a class="btn" href="#konsultasi" data-goto-form="work">Konsultasikan proyek serupa</a>
+        <p>Lihat bagaimana kebutuhan brand yang berbeda diterjemahkan menjadi ruang dan pengalaman yang memiliki karakter masing-masing.</p>
+        <a class="btn btn--light" href="https://hanumanexpo.com/" target="_blank" rel="noopener" data-track="portfolio_work">Lihat portofolio lengkap <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
       </div>
     </div>
   </section>
@@ -647,54 +619,20 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
     <div class="wrap why-grid">
       <div>
         <h2 id="why-h" lang="en">Why Hanuman Construction?</h2>
+        <p class="lede" lang="en">We Think Beyond Construction.</p>
       </div>
       <div>
         <dl class="spec">
-          <div class="spec-row"><dt lang="en">Experience since 2015</dt><dd>Booth pameran, interior, konstruksi, dan event. Kami sudah mengerjakan keempatnya, untuk brand dengan kebutuhan yang sangat berbeda.</dd></div>
-          <div class="spec-row"><dt lang="en">Design meets execution</dt><dd>Desain yang bagus di layar baru ada artinya kalau bisa dibangun di lokasi sesuai rencana. Satu tim memegang desain, produksi, dan pemasangan, jadi Anda tidak perlu menjembatani banyak vendor.</dd></div>
-          <div class="spec-row"><dt lang="en">Built around your brand</dt><dd>Kami mulai dari karakter brand, kebutuhan ruang, target pengunjung, dan tujuan Anda, baru kemudian menggambar.</dd></div>
+          <div class="spec-row"><dt lang="en">Experience Since 2015</dt><dd>Pengalaman dalam menangani beragam kebutuhan konstruksi, booth pameran, interior, dan event.</dd></div>
+          <div class="spec-row"><dt lang="en">Design Meets Execution</dt><dd>Ide yang menarik perlu diterjemahkan menjadi realisasi yang sesuai dengan kebutuhan dan tujuan proyek.</dd></div>
+          <div class="spec-row"><dt lang="en">Built Around Your Brand</dt><dd>Setiap proyek dimulai dengan memahami karakter brand, kebutuhan ruang, target audiens, dan tujuan yang ingin dicapai.</dd></div>
+          <div class="spec-row"><dt lang="en">A Partner Throughout the Process</dt><dd>Koordinasi dari tahap diskusi dan perencanaan hingga produksi dan pelaksanaan proyek.</dd></div>
         </dl>
         <div class="why-close">
-          <p>Kami ingin jadi partner yang mengubah kebutuhan proyek Anda menjadi ruang yang terencana, relevan, dan diingat orang.</p>
-          <a class="btn" href="#konsultasi" data-goto-form="why">Konsultasikan proyek Anda</a>
+          <p>Kami ingin menjadi partner yang membantu Anda mengubah kebutuhan proyek menjadi solusi ruang yang relevan, terencana, dan berkesan.</p>
+          <a class="btn" href="#konsultasi" data-goto-form="why">Mulai diskusi proyek</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section class="s process" aria-labelledby="proc-h">
-    <div class="wrap">
-      <div class="s-head">
-        <h2 id="proc-h" lang="en">How we bring your project to life.</h2>
-      </div>
-      <ol class="steps" id="steps">
-        <li class="step">
-          <div class="stack" aria-hidden="true"><span class="layer"></span></div>
-          <span class="step-n">01</span>
-          <h3 lang="en">Discover</h3>
-          <p>Kami pelajari kebutuhan, tujuan, referensi, dan lingkup proyek Anda.</p>
-        </li>
-        <li class="step">
-          <div class="stack" aria-hidden="true"><span class="layer"></span><span class="layer"></span></div>
-          <span class="step-n">02</span>
-          <h3 lang="en">Plan</h3>
-          <p>Konsep, kebutuhan teknis, timeline, dan estimasi kita bahas sesuai lingkup pekerjaan.</p>
-        </li>
-        <li class="step">
-          <div class="stack" aria-hidden="true"><span class="layer"></span><span class="layer"></span><span class="layer"></span></div>
-          <span class="step-n">03</span>
-          <h3 lang="en">Create</h3>
-          <p>Desain final, persiapan produksi, dan koordinasi pelaksanaan berjalan sesuai kesepakatan.</p>
-        </li>
-        <li class="step">
-          <div class="stack" aria-hidden="true"><span class="layer"></span><span class="layer"></span><span class="layer"></span><span class="layer face"></span></div>
-          <span class="step-n">04</span>
-          <h3 lang="en">Deliver</h3>
-          <p>Tim kami membangun dan memasang sesuai rencana dan lingkup yang sudah disepakati bersama.</p>
-        </li>
-      </ol>
-      <p class="steps-note">Tahapan aktual bisa menyesuaikan jenis dan kompleksitas proyek.</p>
     </div>
   </section>
 
@@ -703,10 +641,15 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
     <div class="wrap order-grid">
       <div class="order-copy">
         <h2 id="order-h" lang="en">Your idea. Our next project.</h2>
-        <p class="lede" lang="en">Let's build something people remember.</p>
-        <p class="order-q">Sedang menyiapkan pameran berikutnya? Membuka showroom, merenovasi ruang komersial, atau merencanakan event yang butuh eksekusi rapi?</p>
-        <p>Ceritakan kebutuhan Anda. Kita bahas konsep, kemungkinan, dan langkah paling masuk akal untuk mewujudkannya. Butuh estimasi biaya? Centang saja di formulir.</p>
-        <p class="order-direct">Lebih suka langsung chat? <a href="https://wa.me/628119118898?text=Halo%20tim%20Hanuman%2C%20saya%20ingin%20diskusi%20proyek." target="_blank" rel="noopener" data-track="whatsapp_direct">WhatsApp +62 811-9118-898</a></p>
+        <p class="lede" lang="en">Let's Build Something Remarkable.</p>
+        <p class="order-q">Sedang mempersiapkan pameran berikutnya? Membuka showroom? Mengembangkan ruang komersial? Atau merencanakan event yang membutuhkan eksekusi profesional?</p>
+        <p>Ceritakan kebutuhan Anda kepada kami. Mari diskusikan kemungkinan, konsep, dan langkah terbaik untuk mewujudkan proyek Anda.</p>
+        <div class="order-ctas">
+          <a class="btn btn--light" href="#sheet" data-goto-form="order_consult">Konsultasi proyek sekarang</a>
+          <a class="btn btn--light" href="#sheet" data-estimate>Minta estimasi biaya</a>
+          <a class="btn btn--ghost" href="https://wa.me/628119118898?text=Halo%20tim%20Hanuman%2C%20saya%20ingin%20diskusi%20proyek." target="_blank" rel="noopener" data-track="whatsapp_direct"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Hubungi tim Hanuman</a>
+        </div>
+        <p class="order-direct">Belum memiliki desain final? Tidak masalah. Mulai dari ide dan kebutuhan Anda terlebih dahulu.</p>
       </div>
 
       <div class="sheet" id="sheet">
@@ -714,7 +657,6 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
         <form id="lead" action="#konsultasi" method="post" novalidate>
           <noscript><p class="nojs">Formulir ini butuh JavaScript. Silakan chat langsung ke WhatsApp +62 811-9118-898.</p></noscript>
           <div class="sheet-title"><h3 tabindex="-1">Ceritakan proyek Anda</h3><span class="code">± 1 menit</span></div>
-          <p class="sheet-lead">Belum punya desain final? Tidak masalah, cukup ceritakan idenya.</p>
 
           <div class="row2">
             <div class="field" data-req>
@@ -785,36 +727,69 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
     </div>
   </section>
 
+  <!-- PROCESS -->
+  <section class="s process" aria-labelledby="proc-h">
+    <div class="wrap">
+      <div class="s-head">
+        <h2 id="proc-h" lang="en">How we bring your project to life.</h2>
+      </div>
+      <ol class="steps" id="steps">
+        <li class="step">
+          <div class="stack" aria-hidden="true"><span class="layer"></span></div>
+          <span class="step-n">01</span>
+          <h3 lang="en">Discover</h3>
+          <p>Kami memahami kebutuhan, tujuan, referensi, dan ruang lingkup proyek Anda.</p>
+        </li>
+        <li class="step">
+          <div class="stack" aria-hidden="true"><span class="layer"></span><span class="layer"></span></div>
+          <span class="step-n">02</span>
+          <h3 lang="en">Plan</h3>
+          <p>Kami mendiskusikan konsep, kebutuhan teknis, timeline, dan estimasi sesuai lingkup pekerjaan.</p>
+        </li>
+        <li class="step">
+          <div class="stack" aria-hidden="true"><span class="layer"></span><span class="layer"></span><span class="layer"></span></div>
+          <span class="step-n">03</span>
+          <h3 lang="en">Create</h3>
+          <p>Proyek bergerak ke tahap desain, persiapan produksi, dan koordinasi pelaksanaan sesuai kesepakatan.</p>
+        </li>
+        <li class="step">
+          <div class="stack" aria-hidden="true"><span class="layer"></span><span class="layer"></span><span class="layer"></span><span class="layer face"></span></div>
+          <span class="step-n">04</span>
+          <h3 lang="en">Deliver</h3>
+          <p>Kami melaksanakan pekerjaan sesuai rencana dan ruang lingkup yang telah disepakati bersama.</p>
+        </li>
+      </ol>
+      <p class="steps-note">Alur dan tahapan aktual dapat disesuaikan dengan jenis serta kompleksitas proyek.</p>
+    </div>
+  </section>
+
   <!-- FAQ -->
   <section class="s faq" aria-labelledby="faq-h">
     <div class="wrap faq-grid">
       <div>
-        <h2 id="faq-h" class="h2-sm">Pertanyaan yang sering masuk</h2>
+        <h2 id="faq-h" class="h2-sm">FAQ</h2>
+        <p class="lede" lang="en">Frequently Asked Questions</p>
       </div>
       <div>
         <details class="qa">
-          <summary>Acara saya sebentar lagi. Masih bisa dikejar?<span class="pm" aria-hidden="true"></span></summary>
-          <p>Tergantung ukuran dan kerumitan booth. Untuk booth standar, kami butuh sekitar <mark class="todo">[ISI: waktu pengerjaan booth standar]</mark> dari desain disetujui sampai terpasang. Pesanan mendadak bisa kami bahas mulai <mark class="todo">[ISI: waktu minimal pesanan mendadak]</mark> sebelum acara. Tulis tanggal acara Anda di formulir supaya kami bisa langsung cek jadwal produksi.</p>
+          <summary>Apakah Hanuman Construction hanya menangani booth pameran?<span class="pm" aria-hidden="true"></span></summary>
+          <p>Tidak. Selain booth pameran, layanan kami mencakup dekorasi venue, event management, desain interior, dan konstruksi sesuai kebutuhan proyek.</p>
         </details>
         <details class="qa">
-          <summary>Apakah Hanuman hanya mengerjakan booth pameran?<span class="pm" aria-hidden="true"></span></summary>
-          <p>Tidak. Selain booth pameran, kami mengerjakan pop-up booth, dukungan event (dekorasi venue dan event management), serta desain dan konstruksi interior komersial.</p>
+          <summary>Bagaimana jika saya baru memiliki ide dan belum memiliki desain?<span class="pm" aria-hidden="true"></span></summary>
+          <p>Anda tetap dapat memulai dengan mendiskusikan kebutuhan, referensi, tujuan, dan gambaran ruang yang diinginkan bersama tim kami.</p>
         </details>
         <details class="qa">
-          <summary>Saya baru punya ide, belum ada desain. Bisa mulai?<span class="pm" aria-hidden="true"></span></summary>
-          <p>Bisa. Bawa referensi, tujuan, dan gambaran ruang yang Anda bayangkan; desainnya kita kembangkan bersama tim kami.</p>
+          <summary>Apakah saya bisa meminta estimasi biaya terlebih dahulu?<span class="pm" aria-hidden="true"></span></summary>
+          <p>Bisa. Sampaikan jenis proyek, lokasi, desain, ukuran atau luas area jika tersedia, serta target waktu pengerjaan. Informasi tersebut akan membantu proses pembahasan kebutuhan dan estimasi.</p>
         </details>
         <details class="qa">
-          <summary>Bisa minta estimasi biaya dulu?<span class="pm" aria-hidden="true"></span></summary>
-          <p>Bisa. Kirimkan jenis proyek, lokasi, desain (kalau sudah ada), ukuran area, dan target waktu pengerjaan. Makin lengkap infonya, makin cepat pembahasan estimasinya.</p>
-        </details>
-        <details class="qa">
-          <summary>Apakah Hanuman menangani proyek perusahaan atau brand?<span class="pm" aria-hidden="true"></span></summary>
-          <p>Ya, untuk proyek booth pameran, interior, konstruksi, dan event. Lingkup pekerjaannya kita sepakati per proyek, sesuai kebutuhan Anda.</p>
+          <summary>Apakah Hanuman Construction dapat menangani kebutuhan proyek perusahaan atau brand?<span class="pm" aria-hidden="true"></span></summary>
+          <p>Kami melayani kebutuhan proyek yang relevan dengan booth pameran, interior, konstruksi, dan event. Detail lingkup pekerjaan dapat didiskusikan berdasarkan kebutuhan masing-masing proyek.</p>
         </details>
         <details class="qa">
           <summary>Apa langkah pertama untuk memulai?<span class="pm" aria-hidden="true"></span></summary>
-          <p>Isi formulir di halaman ini atau chat tim Hanuman di WhatsApp, lalu ceritakan proyek yang sedang Anda siapkan. Detailnya tidak harus lengkap dulu.</p>
+          <p>Hubungi tim Hanuman Construction dan ceritakan proyek yang sedang Anda persiapkan. Anda tidak harus menunggu semua detail selesai untuk memulai percakapan.</p>
         </details>
       </div>
     </div>
@@ -827,7 +802,7 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
       <div class="board close-board">
         <h2 id="close-h" lang="en">Ready to make your next project stand out?</h2>
         <p class="lede" lang="en">A great space starts with a great conversation.</p>
-        <a class="btn btn--light" href="#konsultasi" data-goto-form="close">Konsultasikan proyek Anda</a>
+        <a class="btn btn--light" href="#konsultasi" data-goto-form="close">Diskusikan proyek Anda</a>
       </div>
     </div>
   </section>
@@ -837,7 +812,7 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
   <div class="wrap foot">
     <div>
       <img src="assets/logo-full-light.png" width="900" height="299" loading="lazy" alt="Hanuman Exhibition and Interior Construction">
-      <p>Hanuman Construction, a construction and spatial experience partner by PT Imaji Nova Caraka.</p>
+      <p lang="en">Hanuman Construction. A construction and spatial experience partner by PT Imaji Nova Caraka.</p>
       <p class="tag">Building spaces. Creating experiences. Making brands memorable.</p>
     </div>
     <ul>
@@ -927,6 +902,14 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
     });
   });
 
+  document.querySelectorAll('[data-estimate]').forEach(function(a){
+    a.addEventListener('click', function(ev){
+      ev.preventDefault();
+      document.getElementById('f-est').checked = true;
+      goForm('order_estimate');
+    });
+  });
+
   document.querySelectorAll('[data-type]').forEach(function(b){
     b.addEventListener('click', function(){
       var v = b.getAttribute('data-type');
@@ -935,7 +918,7 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
       typeStatus.textContent = picked.length > 1
         ? v + ' ditambahkan. Terpilih: ' + picked.join(', ') + '.'
         : v + ' sudah dipilih di formulir.';
-      goForm((b.classList.contains('chip') ? 'hero_' : 'service_') + v, input);
+      goForm('service_' + v, input);
     });
   });
 
@@ -1092,9 +1075,9 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
     var dock = document.getElementById('dock');
     var formIn = false, heroIn = true;
     var upd = function(){ dock.classList.toggle('on', !heroIn && !formIn); };
-    // watch the hero chips once the board's clip-path reveal has finished; while it plays they read as hidden
+    // watch the hero buttons once the board's clip-path reveal has finished; while it plays they read as hidden
     setTimeout(function(){
-      new IntersectionObserver(function(es){ heroIn = es[0].isIntersecting; upd(); }).observe(document.querySelector('.chips'));
+      new IntersectionObserver(function(es){ heroIn = es[0].isIntersecting; upd(); }).observe(document.querySelector('.hero-ctas'));
     }, reduce ? 0 : 900);
     new IntersectionObserver(function(es){ formIn = es[0].isIntersecting; upd(); }, {threshold: .15}).observe(target);
   } else {
