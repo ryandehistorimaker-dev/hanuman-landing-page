@@ -394,7 +394,7 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
   .hero{display:block;min-height:0}
   .hero-photo{position:relative;height:38svh;min-height:220px;max-height:420px}
   .hero-photo img{object-position:60% 50%}
-  .hero-board{margin:-30px 0 0 var(--gutter);width:calc(100% - 2*var(--gutter));padding:24px 20px 26px}
+  .hero-board{margin:12px 0 0 var(--gutter);width:calc(100% - 2*var(--gutter));padding:24px 20px 26px}
   .hero-board{background:var(--hpl);-webkit-backdrop-filter:none;backdrop-filter:none}
   .hero .lede{font-size:16px}
   .hero-body{font-size:15px;margin-top:.6em}
@@ -442,6 +442,15 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
   .dock .wa{flex:none;width:54px;padding:0;--bg:#1E8E4E;--edge:#14643A}
   .dock .wa:hover{background:#22A05A}
   footer{padding-bottom:calc(110px + env(safe-area-inset-bottom))}
+}
+/* desktop hero: the panel sits on a blurred copy of the photo and the sharp photo starts at the panel's edge,
+   so the booth is never under the panel however wide or short the window is */
+@media (min-width:761px){
+  .hero{--board-w:clamp(480px,48vw,700px);overflow:hidden;padding-top:clamp(92px,9vw,120px)}
+  .hero::before{content:"";position:absolute;inset:-40px;z-index:-2;background:url(assets/hero-purva.jpg) 20% 60%/cover;filter:blur(28px) brightness(.5)}
+  .hero-photo{left:calc(var(--gutter) + var(--board-w) + 12px - 56px)}
+  .hero-photo img{object-position:54% 62%}
+  .hero-board{width:var(--board-w)}
 }
 </style>
 </head>
