@@ -359,12 +359,10 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
 .foot img{width:min(300px,70vw);height:auto}
 .foot p{margin:16px 0 0}
 .foot .tag{color:#fff;font-family:var(--display);font-weight:500;font-size:16px;letter-spacing:-.01em}
-.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
-.foot li a{display:inline-flex;align-items:center;gap:12px;min-height:44px;padding:4px 0;text-decoration:none}
-.foot li svg{width:20px;height:20px;flex:none;color:var(--ply-a)}
-.foot li .k{color:#CFC7BF;font-weight:500}
-.foot li .v{text-decoration:underline;text-underline-offset:.22em;text-decoration-thickness:1.5px}
-.foot li a:hover .v{text-decoration-color:var(--ply-a)}
+.foot ul{list-style:none;margin:0;padding:0;display:flex;gap:12px}
+.foot li a{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:#24211F;color:var(--ply-a);transition:background-color .2s,color .2s,transform .25s var(--ease)}
+.foot li a:hover{background:var(--hpl);color:#fff;transform:translateY(-2px)}
+.foot li svg{width:22px;height:22px}
 .foot a{color:#fff;font-weight:600}
 
 /* ---------- sticky mobile bar ---------- */
@@ -852,10 +850,10 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
       <p class="tag">Building spaces. Creating experiences. Making brands memorable.</p>
     </div>
     <ul aria-label="Kontak Hanuman">
-      <li><a href="mailto:adm.hanuman@gmail.com" data-track="email_footer"><svg viewBox="0 0 24 24" aria-hidden="true"><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></g></svg><span><span class="k">Email:</span> <span class="v">adm.hanuman@gmail.com</span></span></a></li>
-      <li><a href="https://wa.me/628119118898" target="_blank" rel="noopener" data-track="whatsapp_footer"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg><span><span class="k">WhatsApp:</span> <span class="v">+62 811-9118-898</span></span></a></li>
-      <li><a href="https://www.instagram.com/hanuman.construction/" target="_blank" rel="noopener" data-track="instagram_footer"><svg viewBox="0 0 24 24" aria-hidden="true"><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></g></svg><span><span class="k">Instagram:</span> <span class="v">@hanuman.construction</span></span></a></li>
-      <li><a href="https://hanumanexpo.com/" target="_blank" rel="noopener" data-track="portfolio_footer"><svg viewBox="0 0 24 24" aria-hidden="true"><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3"/></g></svg><span><span class="k">Website:</span> <span class="v">hanumanexpo.com</span></span></a></li>
+      <li><a href="mailto:adm.hanuman@gmail.com" data-track="email_footer" aria-label="Email: adm.hanuman@gmail.com" title="Email: adm.hanuman@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></g></svg></a></li>
+      <li><a href="https://wa.me/628119118898" target="_blank" rel="noopener" data-track="whatsapp_footer" aria-label="WhatsApp: +62 811-9118-898" title="WhatsApp: +62 811-9118-898"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg></a></li>
+      <li><a href="https://www.instagram.com/hanuman.construction/" target="_blank" rel="noopener" data-track="instagram_footer" aria-label="Instagram: @hanuman.construction" title="Instagram: @hanuman.construction"><svg viewBox="0 0 24 24" aria-hidden="true"><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></g></svg></a></li>
+      <li><a href="https://hanumanexpo.com/" target="_blank" rel="noopener" data-track="portfolio_footer" aria-label="Website: hanumanexpo.com" title="Website: hanumanexpo.com"><svg viewBox="0 0 24 24" aria-hidden="true"><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3"/></g></svg></a></li>
     </ul>
   </div>
 </footer>
