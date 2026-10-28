@@ -37,7 +37,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/hero-chandra-asri.jpg">
+<link rel="preload" as="image" href="assets/hero-purva.jpg">
 <style>
 :root{
   --hpl:#821D1D;
@@ -126,7 +126,7 @@ p{margin:0 0 1em;max-width:62ch}
 /* ---------- hero ---------- */
 .hero{position:relative;min-height:min(100svh,940px);display:flex;align-items:flex-end;isolation:isolate}
 .hero-photo{position:absolute;inset:0;z-index:-1;overflow:hidden;background:var(--night)}
-.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:62% 55%}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:68% 60%}
 .hero-photo::after{content:"";position:absolute;inset:0 0 auto 0;height:160px;background:linear-gradient(rgba(16,14,13,.55),rgba(16,14,13,0))}
 .hero-board{width:min(760px,62vw);margin-left:var(--gutter);margin-bottom:-40px;padding:clamp(24px,2.8vw,42px) clamp(24px,3.4vw,52px) clamp(24px,2.6vw,36px);z-index:2}
 .hero h1{font-size:clamp(28px,3.3vw,46px);font-weight:600;color:#fff}
@@ -212,6 +212,8 @@ section.s{padding:clamp(88px,10vw,150px) 0}
 .g9{grid-column:span 4;grid-row:span 3}
 .g10{grid-column:span 6;grid-row:span 3}
 .g11{grid-column:span 6;grid-row:span 3}
+.g8 img{object-position:50% 70%}
+.g9 img{object-position:50% 40%}
 
 .schedule{margin-top:clamp(56px,7vw,96px)}
 .schedule-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px 24px;margin-bottom:14px}
@@ -344,6 +346,9 @@ mark.todo{background:#FFE58F;color:var(--ink);padding:0 4px;border-radius:2px;ou
 .close-photo{position:absolute;inset:0;z-index:-1}
 .close-photo img{width:100%;height:100%;object-fit:cover;opacity:.55}
 .close-board{max-width:820px;padding:clamp(28px,4vw,56px)}
+/* translucent HPL over the photo (client revision); white text stays above 4.5:1 even over the brightest part of the photo */
+.hero-board,.close-board{background:rgba(130,29,29,.78);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+@media (min-width:761px){.hero-board{margin-bottom:clamp(28px,4vw,56px)}}
 .close-board h2{color:#fff;font-size:clamp(28px,4vw,52px)}
 .close-board .lede{color:var(--on-hpl-2)}
 .close-board .btn{margin-top:28px}
@@ -390,6 +395,7 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
   .hero-photo{position:relative;height:38svh;min-height:220px;max-height:420px}
   .hero-photo img{object-position:60% 50%}
   .hero-board{margin:-30px 0 0 var(--gutter);width:calc(100% - 2*var(--gutter));padding:24px 20px 26px}
+  .hero-board{background:var(--hpl);-webkit-backdrop-filter:none;backdrop-filter:none}
   .hero .lede{font-size:16px}
   .hero-body{font-size:15px;margin-top:.6em}
   .long{display:none}
@@ -461,7 +467,7 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
   <!-- HERO -->
   <section class="hero" aria-labelledby="hero-h">
     <div class="hero-photo">
-      <img src="assets/hero-chandra-asri.jpg" width="2000" height="1500" alt="Booth pameran Chandra Asri dengan struktur gantung heksagonal dan panel biru, dikerjakan Hanuman" fetchpriority="high">
+      <img src="assets/hero-purva.jpg" width="2000" height="1041" alt="Booth pameran PURVA dengan pilar panel kayu melengkung, taman tropis, dan huruf PURVA bercahaya, dikerjakan Hanuman" fetchpriority="high">
     </div>
 
     <div class="board hero-board">
@@ -538,7 +544,7 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
       <div class="deck">
         <article class="chipcard">
           <div class="chipcard-top"><span class="hole" aria-hidden="true"></span><span class="code" lang="en">Booth</span></div>
-          <figure><img src="assets/booth-toto.jpg" width="1400" height="1047" loading="lazy" alt="Booth pameran putih dengan dinding lengkung untuk Surya Pertiwi dan TOTO"></figure>
+          <figure><img src="assets/card-booth.jpg" width="1400" height="1050" loading="lazy" alt="Booth pameran KIA Keramik dengan dinding marmer, plafon rangka, dan tangga bercahaya"></figure>
           <span class="num">01</span>
           <h3 lang="en">Exhibition Booth Design &amp; Build</h3>
           <p>Hadirkan booth yang mencerminkan karakter brand, menarik perhatian pengunjung, dan mendukung tujuan partisipasi Anda dalam pameran.</p>
@@ -547,7 +553,7 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
         </article>
         <article class="chipcard">
           <div class="chipcard-top"><span class="hole" aria-hidden="true"></span><span class="code" lang="en">Interior</span></div>
-          <figure><img src="assets/interior-lounge.jpg" width="1400" height="934" loading="lazy" alt="Interior komersial dengan dinding kayu, lampu tersembunyi, dan tanaman"></figure>
+          <figure><img src="assets/card-interior.jpg" width="1400" height="1050" loading="lazy" alt="Interior restoran dengan meja kayu, kursi abu-abu, dan dinding panel kayu bergaya Jepang"></figure>
           <span class="num">02</span>
           <h3 lang="en">Interior Design &amp; Construction</h3>
           <p>Pengerjaan interior komersial sesuai ruang lingkup proyek, kebutuhan fungsi, karakter brand, dan anggaran yang disepakati.</p>
@@ -565,7 +571,7 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
         </article>
         <article class="chipcard">
           <div class="chipcard-top"><span class="hole" aria-hidden="true"></span><span class="code" lang="en">Event</span></div>
-          <figure><img src="assets/event-installation.jpg" width="1400" height="788" loading="lazy" alt="Instalasi dekorasi event berbentuk pohon dengan cincin bertuliskan nama acara"></figure>
+          <figure><img src="assets/card-event.jpg" width="1400" height="1050" loading="lazy" alt="Ballroom event dengan panggung LED lebar, dekorasi chevron merah, dan deretan kursi bersarung hitam"></figure>
           <span class="num">04</span>
           <h3 lang="en">Support Event Design &amp; Build</h3>
           <p>Dukung kebutuhan event Anda melalui koordinasi dan pengelolaan pelaksanaan yang terarah.</p>
@@ -592,17 +598,17 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
       </div>
 
       <div class="gallery">
-        <figure class="g1"><img src="assets/g-surya-pertiwi-lg.jpg" width="1600" height="1197" loading="lazy" alt="Booth Surya Pertiwi putih dengan lis cahaya melengkung dan display sanitair"><figcaption>Surya Pertiwi<small>Booth pameran</small></figcaption></figure>
-        <figure class="g2"><img src="assets/g-canon.jpg" width="1200" height="638" loading="lazy" alt="Booth Canon merah-putih di area Asian Games 2018"><figcaption>Canon<small>Asian Games 2018</small></figcaption></figure>
+        <figure class="g1"><img src="assets/g-magnum-hammersonic.jpg" width="1600" height="902" loading="lazy" alt="Booth Magnum berbentuk amplifier dan gitar raksasa bercahaya di Hammersonic Festival pada malam hari"><figcaption>Magnum<small>Hammersonic Festival</small></figcaption></figure>
+        <figure class="g2"><img src="assets/g-skayu-arch.jpg" width="1200" height="800" loading="lazy" alt="Booth SKAYU dengan atap miring gelap dan dinding kisi kayu bercahaya hangat di ARCH.ID"><figcaption>SKAYU<small>ARCH.ID</small></figcaption></figure>
         <figure class="g3"><img src="assets/g-honda.jpg" width="1200" height="802" loading="lazy" alt="Booth Honda dengan huruf RS bercahaya dan deretan mobil"><figcaption>Honda<small>Booth pameran otomotif</small></figcaption></figure>
         <figure class="g4"><img src="assets/g-kia-booth.jpg" width="1200" height="1200" loading="lazy" alt="Booth KIA Keramik dengan rangka segitiga hitam dan tanaman gantung"><figcaption>KIA Keramik<small>Booth pameran</small></figcaption></figure>
         <figure class="g5"><img src="assets/g-toto.jpg" width="1000" height="1500" loading="lazy" alt="Booth TOTO putih dengan display kloset dan wastafel"><figcaption>TOTO<small>Booth pameran</small></figcaption></figure>
         <figure class="g6"><img src="assets/g-modena.jpg" width="1200" height="1440" loading="lazy" alt="Booth MODENA dengan display kompor dan oven di hall pameran"><figcaption>MODENA<small>Booth pameran</small></figcaption></figure>
-        <figure class="g7"><img src="assets/g-anessa.jpg" width="1200" height="689" loading="lazy" alt="Booth Anessa biru dengan grafis matahari"><figcaption>Anessa<small>Booth</small></figcaption></figure>
-        <figure class="g8"><img src="assets/g-taco.jpg" width="1200" height="675" loading="lazy" alt="Booth TACO gelap dengan pepohonan dan lengkungan"><figcaption>TACO<small>Booth pameran</small></figcaption></figure>
-        <figure class="g9"><img src="assets/g-cafe.jpg" width="1200" height="900" loading="lazy" alt="Interior kafe dengan kisi kayu, lampu gantung, dan meja kayu"><figcaption>Interior F&amp;B<small>Konstruksi interior</small></figcaption></figure>
+        <figure class="g7"><img src="assets/g-cnf.jpg" width="900" height="1200" loading="lazy" alt="Display parfum YSL, Lancôme, dan Giorgio Armani untuk kampanye C&amp;F"><figcaption>C&amp;F<small>Campaign Series</small></figcaption></figure>
+        <figure class="g8"><img src="assets/g-taco-doom.jpg" width="900" height="1200" loading="lazy" alt="Booth TACO dengan huruf TACO besar, tanaman tropis, dan instalasi kubah berwarna"><figcaption>TACO<small>DOOM Production</small></figcaption></figure>
+        <figure class="g9"><img src="assets/g-bri.jpg" width="900" height="1200" loading="lazy" alt="Interior kantor Bank BRI dengan meja resepsionis putih-kayu dan lemari panel kayu"><figcaption>Bank BRI<small>Interior</small></figcaption></figure>
         <figure class="g10"><img src="assets/g-kia-showroom.jpg" width="1200" height="675" loading="lazy" alt="Showroom KIA dengan dinding marmer dan display produk"><figcaption>KIA<small>Showroom</small></figcaption></figure>
-        <figure class="g11"><img src="assets/g-interior-wood.jpg" width="1200" height="900" loading="lazy" alt="Ruang lounge dengan dinding kisi kayu dan sofa abu-abu"><figcaption>Interior lounge<small>Desain &amp; konstruksi</small></figcaption></figure>
+        <figure class="g11"><img src="assets/g-aica-ibt.jpg" width="1200" height="900" loading="lazy" alt="Booth AICA bertekstur kotak hitam dan kuning di Indobuildtech"><figcaption>AICA<small>Indobuildtech</small></figcaption></figure>
       </div>
       <button class="link gallery-more" type="button" id="gallery-more" aria-expanded="false">Lihat semua proyek</button>
       
@@ -815,7 +821,7 @@ footer{background:var(--night);color:#CFC7BF;padding:56px 0 calc(40px + env(safe
 
   <!-- CLOSE -->
   <section class="close" aria-labelledby="close-h">
-    <div class="close-photo"><img src="assets/g-hammer.jpg" width="1200" height="676" loading="lazy" alt=""></div>
+    <div class="close-photo"><img src="assets/close-evopet.jpg" width="1600" height="1067" loading="lazy" alt=""></div>
     <div class="wrap">
       <div class="board close-board">
         <h2 id="close-h" lang="en">Ready to make your next project stand out?</h2>
