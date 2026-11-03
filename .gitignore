@@ -15,3 +15,6 @@ preview/
 .impeccable/hook.cache.json
 .impeccable/shot.sh
 .omc/
+
+# Single-file HTML for sharing with the team (rebuilt from index.html + assets/)
+dist/
