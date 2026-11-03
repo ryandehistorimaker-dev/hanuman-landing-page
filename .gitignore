@@ -9,11 +9,7 @@ preview/
 
 # Local tooling and caches
 .claude/
-.impeccable/review/
-.impeccable/live/
-.impeccable/questions/
-.impeccable/hook.cache.json
-.impeccable/shot.sh
+.impeccable/
 .omc/
 
 # Single-file HTML for sharing with the team (rebuilt from index.html + assets/)
